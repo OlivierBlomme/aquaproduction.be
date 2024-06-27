@@ -1,0 +1,7 @@
+.form {
+  &--search {
+    @include medium {
+      min-width: 20rem;
+    }
+  }
+}

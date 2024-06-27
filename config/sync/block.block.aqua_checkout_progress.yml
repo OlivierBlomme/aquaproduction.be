@@ -1,0 +1,28 @@
+uuid: 957cf656-70b0-49dd-b77b-51c0d68de726
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - aqua
+_core:
+  default_config_hash: im7u9rT7k9QD2PJ-ZljcOGMEzrnEb_kgGn4smMtLW4o
+id: aqua_checkout_progress
+theme: aqua
+region: content
+weight: -7
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: Betalingsvoortgang
+  label_display: '0'
+  provider: commerce_checkout
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/checkout/*'

@@ -1,0 +1,11 @@
+uuid: c6da1670-20ea-488a-8686-3091b40c796d
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 401nr5O6_0R2FE1LCqFQMl0iArRx2LUL5MgjW4OHvmQ
+name: Plantengroepen
+vid: plantgroups
+description: Plantengroepen
+weight: 0
+new_revision: false

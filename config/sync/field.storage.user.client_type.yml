@@ -1,0 +1,22 @@
+uuid: 6b2cd346-d6ba-4298-b486-039a51d9cd9e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - user
+    - verdesoft_pricing
+_core:
+  default_config_hash: teSr9OmmUflm1-5X69nEG721YPxVwSoXBNBj--i3dRY
+id: user.client_type
+field_name: client_type
+entity_type: user
+type: entity_reference
+settings:
+  target_type: client_type
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

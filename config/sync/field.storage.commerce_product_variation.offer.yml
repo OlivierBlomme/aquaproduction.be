@@ -1,0 +1,20 @@
+uuid: 22a6e197-4145-40a8-9881-070f6de36c62
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: gcQc2jw3ekz-Nr2Piz9aOCzLU8mUA3BTKGJ0SikmMdU
+id: commerce_product_variation.offer
+field_name: offer
+entity_type: commerce_product_variation
+type: boolean
+settings: {  }
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

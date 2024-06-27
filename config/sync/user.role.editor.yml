@@ -1,0 +1,51 @@
+uuid: 56aeaef6-a345-4137-8605-6789b80e8efe
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.page
+  module:
+    - block
+    - commerce
+    - commerce_order
+    - commerce_product
+    - contextual
+    - node
+    - profile
+    - system
+    - toolbar
+_core:
+  default_config_hash: l9aZslQKb-RxaZHFxszkdJQNsEGunPDDcTlIsYmXZ3w
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access commerce_product overview'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'administer account settings'
+  - 'administer blocks'
+  - 'administer nodes'
+  - 'administer users'
+  - 'create article content'
+  - 'create page content'
+  - 'delete any article content'
+  - 'delete any customer profile'
+  - 'delete any default commerce_product'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit own article content'
+  - 'edit own page content'
+  - 'manage default commerce_order_item'
+  - 'update any customer profile'
+  - 'update any default commerce_product'
+  - 'update default commerce_order'
+  - 'view default commerce_order'
+  - 'view the administration theme'

@@ -1,0 +1,23 @@
+uuid: 58a80f4e-75cf-4088-931a-5c118c8c014f
+langcode: nl
+status: true
+dependencies:
+  module:
+    - contact
+_core:
+  default_config_hash: Fdbho5znSHwrGVEkF502B3y2Tl609WGseDSIgS1V0Vc
+id: contact_message.field_name
+field_name: field_name
+entity_type: contact_message
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

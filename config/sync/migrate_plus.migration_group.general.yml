@@ -1,0 +1,10 @@
+uuid: ae0a8272-dd22-4898-b286-7c2e51a3ec41
+langcode: fr
+status: true
+dependencies: {  }
+id: general
+label: general
+description: ''
+source_type: null
+module: null
+shared_configuration: null

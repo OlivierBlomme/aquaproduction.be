@@ -1,0 +1,45 @@
+<?php
+
+use Drupal\views\Views;
+
+/**
+ * Implements hook_preprocess_page_title() for page title templates.
+ */
+function aqua_preprocess_page_title(array &$variables)
+{
+
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    // Add the pre_title to the content array.
+    $variables['pre_title'] = t('Over ons');
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_block() for block templates.
+ */
+function aqua_preprocess_block(array &$variables)
+{
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+
+    if ($variables['elements']['#id'] == 'aqua_views_block__products_taxonomy_block_1') {
+      $variables['pre_title'] = t('Assortiment');
+    } elseif ($variables['elements']['#id'] == 'aqua_views_block__content_recent_block_1') {
+      $variables['pre_title'] = t('Nieuws');
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block() for block templates.
+ */
+function aqua_preprocess_node(array &$variables)
+{
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+
+    if ($variables['node']->bundle() == 'page') {
+      $variables['pre_title'] = t('Over ons');
+    }
+  }
+}
+

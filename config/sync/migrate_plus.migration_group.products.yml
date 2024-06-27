@@ -1,0 +1,12 @@
+uuid: 95fbec88-4617-4b2a-bbf6-598404b05dda
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: syG1MKcofDnHwuUXGVkyFZWMEOE4K5P7x_EAlQOTr78
+id: products
+label: Producten
+description: 'All product and product variation related migrations'
+source_type: null
+module: null
+shared_configuration: null

@@ -1,0 +1,78 @@
+uuid: ae07f48f-7612-496b-8ce8-6315f1095569
+langcode: nl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.field.commerce_product_variation.default.attribute_size
+    - field.field.commerce_product_variation.default.field_category
+    - field.field.commerce_product_variation.default.offer
+    - field.field.commerce_product_variation.default.price2
+    - field.field.commerce_product_variation.default.price3
+    - field.field.commerce_product_variation.default.price4
+    - field.field.commerce_product_variation.default.price5
+    - field.field.commerce_product_variation.default.price6
+    - field.field.commerce_product_variation.default.price7
+    - field.field.commerce_product_variation.default.price8
+    - field.field.commerce_product_variation.default.stock
+    - field.field.commerce_product_variation.default.volume_discount_code
+    - field.field.commerce_product_variation.default.volume_discount_code_pro
+  module:
+    - commerce_price
+_core:
+  default_config_hash: dDLA40Axom_QFA79EWUpe_bWXWE8I_7MijzPkslbVfA
+id: commerce_product_variation.default.default
+targetEntityType: commerce_product_variation
+bundle: default
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  attribute_size: true
+  created: true
+  field_category: true
+  offer: true
+  price2: true
+  price3: true
+  price4: true
+  price5: true
+  price6: true
+  price7: true
+  price8: true
+  stock: true
+  uid: true
+  volume_discount_code: true
+  volume_discount_code_pro: true

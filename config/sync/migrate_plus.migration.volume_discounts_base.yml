@@ -1,0 +1,78 @@
+uuid: e7781b36-027a-4906-94f4-82f3e7e4552e
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6AveBn94Z5eyUo1wnvJ7g_5xIB_jDYYw45njv8lJV68
+id: volume_discounts_base
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: volume_discounts
+label: 'Volume discounts'
+source:
+  plugin: verdesoft_volume_discounts
+  track_changes: true
+process:
+  id: {  }
+  user_id:
+    plugin: default_value
+    default_value: 1
+  quantity_from: qt_min
+  quantity_to: qt_max
+  type:
+    -
+      plugin: skip_on_empty
+      method: row
+      message: 'We need a type for a volume discount to be able to apply'
+      source: type
+    -
+      plugin: static_map
+      source: type
+      map:
+        - ignore
+        - price_field_name
+        - percentage
+        - fixed_price_off
+      default_value: ignore
+  fixed_price_off:
+    -
+      plugin: skip_on_verdesoft_discount_type
+      method: process
+      source: '@type'
+      allowed:
+        - fixed_price_off
+    -
+      plugin: get
+      source: discount_value
+  percentage:
+    -
+      plugin: skip_on_verdesoft_discount_type
+      method: process
+      source: '@type'
+      allowed:
+        - percentage
+    -
+      plugin: get
+      source: discount_value
+  price_field_name:
+    -
+      plugin: skip_on_verdesoft_discount_type
+      method: process
+      source: '@type'
+      allowed:
+        - price_field_name
+    -
+      plugin: get
+      source: discount_value
+  volume_discount_code: map_type
+  langcode:
+    plugin: default_value
+    default_value: nl
+  status:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:volume_discount'
+migration_dependencies: null

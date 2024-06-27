@@ -1,0 +1,13 @@
+uuid: a424310b-343d-43df-b01e-73016ceca187
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: 7IX4TC5rNrI1-8XeWL2fN-gZvfeSMm4ce4tzgl23t8E
+id: commerce_product_variation.teaser
+label: Teaser
+description: ''
+targetEntityType: commerce_product_variation
+cache: true

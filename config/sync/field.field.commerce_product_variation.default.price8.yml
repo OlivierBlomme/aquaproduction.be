@@ -1,0 +1,26 @@
+uuid: 549bd7fb-7cec-4080-962a-835c47aa06d1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.price8
+  module:
+    - commerce_price
+_core:
+  default_config_hash: zn7MvzBrwaQJZAAZKU0C90eV__vIH_haTXHB5-2ALOg
+id: commerce_product_variation.default.price8
+field_name: price8
+entity_type: commerce_product_variation
+bundle: default
+label: 'Price 8'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_currencies:
+    - EUR
+  allow_negative: false
+field_type: commerce_price

@@ -1,0 +1,10 @@
+.carousel {
+  overflow: hidden;
+  &--hero {
+    height: 350px;
+
+    @include medium {
+      height: 550px;
+    }
+  }
+}

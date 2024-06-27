@@ -1,0 +1,50 @@
+uuid: 55cb6255-4f1e-4a67-a003-696607a9acdd
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - taxonomy
+_core:
+  default_config_hash: vTfN41ihwYvcqwC5M9iQsLFEk0EhirP_GTsgv_-DCJM
+id: product_properties_vocabularies_default
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: properties
+label: 'Verdesoft property vocabularies (NL)'
+source:
+  plugin: product_properties_vocabularies_default
+  track_changes: true
+  constants:
+    vid_prefix: verdesoft_
+process:
+  vid:
+    -
+      plugin: skip_on_empty
+      source: id
+      method: row
+      message: 'Unique name cannot be empty, this property vocabulary is not valid'
+    -
+      plugin: machine_name
+      source: id
+    -
+      plugin: concat
+      source:
+        - constants/vid_prefix
+        - id
+    -
+      plugin: make_unique_entity_field
+      entity_type: taxonomy_vocabulary
+      field: id
+  name: name_nl
+  langcode:
+    plugin: default_value
+    default_value: nl
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:taxonomy_vocabulary'
+migration_dependencies: null

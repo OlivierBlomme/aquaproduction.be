@@ -1,0 +1,6 @@
+.main-menu__link {
+
+  @media (min-width: $main-nav-mobile-breakpoint) {
+    padding: $space $space-double;
+  }
+}

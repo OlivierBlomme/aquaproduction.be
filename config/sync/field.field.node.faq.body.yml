@@ -1,0 +1,26 @@
+uuid: 1c17e81c-aed0-4d36-960d-e91c093396ee
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.faq
+  module:
+    - text
+_core:
+  default_config_hash: iGTAZffeg6qdXS29mnc6LAzKyee5S_2Ij_yPVy1VLvk
+id: node.faq.body
+field_name: body
+entity_type: node
+bundle: faq
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

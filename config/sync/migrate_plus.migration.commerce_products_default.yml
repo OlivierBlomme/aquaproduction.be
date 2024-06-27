@@ -1,0 +1,132 @@
+uuid: 67c4b825-ee59-4370-bf2d-a41f89dc3643
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SQ4jxOBY7zlZR_c6ne3LYvHNCczYpEPDLJpClZVpf2k
+id: commerce_products_default
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: products
+label: 'Dutch products'
+source:
+  plugin: commerce_products_default
+  track_changes: true
+process:
+  product_id: {  }
+  type:
+    plugin: default_value
+    default_value: default
+  langcode:
+    plugin: default_value
+    default_value: nl
+  uid:
+    plugin: default_value
+    default_value: 1
+  status:
+    plugin: default_value
+    default_value: 1
+  path/pathauto:
+    plugin: default_value
+    default_value: 1
+  title:
+    -
+      plugin: skip_on_empty
+      source: latin_name
+      method: row
+      message: 'Latin name should not be empty. Skipping'
+    -
+      plugin: get
+      source: latin_name
+  field_name:
+    -
+      plugin: skip_on_empty
+      source: name_nl
+      method: process
+    -
+      plugin: get
+      source: name_nl
+      language: nl
+  body/value:
+    -
+      plugin: skip_on_empty
+      source: description_nl
+      method: process
+    -
+      plugin: callback
+      callable: nl2br
+      source: description_nl
+    -
+      plugin: get
+      language: nl
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  field_images:
+    -
+      plugin: skip_on_empty
+      method: row
+      message: 'No product images found for this product. Skipping.'
+      source: image_ids
+    -
+      plugin: sub_process
+      include_source: true
+      process:
+        target_id:
+          -
+            plugin: migration_lookup
+            migration: product_images_base
+            source: target_id
+            no_stub: true
+        alt: alt
+        title: alt
+  field_category/target_id:
+    plugin: migration_lookup
+    migration:
+      - plantgroups_sub_terms_default
+      - plantgroups_root_terms_default
+    source_ids:
+      plantgroups_sub_terms_default:
+        - sub_group_id
+      plantgroups_root_terms_default:
+        - group_id
+  stores:
+    plugin: default_value
+    default_value:
+      - 1
+  variations:
+    -
+      plugin: skip_on_empty
+      method: row
+      message: 'No product variations found for this product. No price possible. Skipping.'
+      source: variation_ids
+    -
+      plugin: sub_process
+      process:
+        target_id:
+          -
+            plugin: migration_lookup
+            migration: commerce_product_variations_default
+            source: target_id
+            no_stub: true
+  vat_type:
+    -
+      plugin: static_map
+      source: vat
+      map:
+        0: zero
+        6: reduced
+        12: intermediate
+        21: standard
+      default_value: intermediate
+destination:
+  plugin: 'entity:commerce_product'
+migration_dependencies:
+  optional:
+    - product_images_base
+    - product_properties_terms_default
+    - plantgroups_root_terms_default
+    - plantgroups_sub_terms_default
+    - commerce_product_variations_default

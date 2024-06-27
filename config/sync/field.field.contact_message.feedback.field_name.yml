@@ -1,0 +1,21 @@
+uuid: 3726f0b9-c869-4601-8593-6247d8d51f41
+langcode: nl
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_name
+_core:
+  default_config_hash: pcsTK_8OuX8JpF2MyiA0m52eR5LEb5RVbJnkzvxz36k
+id: contact_message.feedback.field_name
+field_name: field_name
+entity_type: contact_message
+bundle: feedback
+label: Naam
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

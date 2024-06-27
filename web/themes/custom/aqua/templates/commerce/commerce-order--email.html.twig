@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Template for the order receipt.
+ *
+ * Available variables:
+ * - order_entity: The order entity.
+ * - billing_information: The billing information.
+ * - shipping_information: The shipping information.
+ * - payment_method: The payment method.
+ * - totals: An array of order totals values with the following keys:
+ *   - subtotal: The order subtotal price.
+ *   - adjustments: An array of adjustment totals:
+ *     - type: The adjustment type.
+ *     - label: The adjustment label.
+ *     - total: The adjustment total price.
+ *     - weight: The adjustment weight, taken from the adjustment type.
+ *   - total: The order total price.
+ *
+ * @ingroup themeable
+ */
+#}
+  {% extends "modules/contrib/verdesoft/modules/order/templates/commerce-order--email.html.twig" %}
+
+            {% block intro %}
+                <p style="font-size: 25px;">{{ 'Thank you'|t }} {{ first_name }}</p>
+                {% trans %}
+                    <p>Je hebt een bestelling geplaatst op plantenaqua.be! Indien je vragen hebt over je
+                        bestelling, kan je ons
+                        mailen op info@plantenaqua.be of bellen op nr. +32 (0)2 270 58 48.</p>
+                    <p>Met vriendelijke groet,<br/>Team Van Doorslaer</p>
+                {% endtrans %}
+            {% endblock %}
+

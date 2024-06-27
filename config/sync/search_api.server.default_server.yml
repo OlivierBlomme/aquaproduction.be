@@ -1,0 +1,19 @@
+uuid: 0be3ecd9-02c6-403a-96a5-e04c7c09f4fa
+langcode: nl
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: qpkLhShuP1lRwyYszYBUDaXT_V-2viAEx05G5x9L-bE
+id: default_server
+name: 'Database Server'
+description: 'Default database server created by the Verdesoft install profile'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: words
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

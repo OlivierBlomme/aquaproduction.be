@@ -1,0 +1,21 @@
+uuid: fd9f7f5e-3cf5-4e50-b792-e2ff347ae107
+langcode: nl
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_company
+_core:
+  default_config_hash: MYMRXoMMQPpW0ZV8sjcyrX7jOnrhKQ82IQazabUDaRM
+id: contact_message.feedback.field_company
+field_name: field_company
+entity_type: contact_message
+bundle: feedback
+label: Bedrijf
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

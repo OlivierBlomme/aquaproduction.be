@@ -1,0 +1,12 @@
+uuid: c3087790-571f-404c-981b-5757257f4cbc
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lC9ZKmZyP7EiKkpAPlhWooQVIHec6sEdSVOHojgeTTM
+id: volume_discounts
+label: 'Volume discounts for products and clients'
+description: 'Volume discounts that can be applied to products and clients'
+source_type: null
+module: null
+shared_configuration: null

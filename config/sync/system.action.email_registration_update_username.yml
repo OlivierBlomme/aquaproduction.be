@@ -1,0 +1,16 @@
+uuid: 421143b1-4ca1-45fd-91be-85fa8be2566a
+langcode: nl
+status: true
+dependencies:
+  module:
+    - email_registration
+  enforced:
+    module:
+      - email_registration
+_core:
+  default_config_hash: fTTlZ4zBYmhkxTRUX0OQGcugaP23EllUK_uOov5V1zs
+id: email_registration_update_username
+label: 'Update username (from email_registration)'
+type: user
+plugin: email_registration_update_username
+configuration: {  }

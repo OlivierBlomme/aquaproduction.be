@@ -1,0 +1,60 @@
+uuid: c1499e01-4027-4ff0-9360-1b5cd2ded443
+langcode: nl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.default.attribute_size
+    - field.field.commerce_product_variation.default.field_category
+    - field.field.commerce_product_variation.default.offer
+    - field.field.commerce_product_variation.default.price2
+    - field.field.commerce_product_variation.default.price3
+    - field.field.commerce_product_variation.default.price4
+    - field.field.commerce_product_variation.default.price5
+    - field.field.commerce_product_variation.default.price6
+    - field.field.commerce_product_variation.default.price7
+    - field.field.commerce_product_variation.default.price8
+    - field.field.commerce_product_variation.default.stock
+    - field.field.commerce_product_variation.default.volume_discount_code
+    - field.field.commerce_product_variation.default.volume_discount_code_pro
+  enforced:
+    module:
+      - commerce_cart
+      - commerce_product
+_core:
+  default_config_hash: 1loaKcNeg7CQCOXpovDg7o2_wh6rOTAOLoLlfHs_eOA
+id: commerce_product_variation.default.cart
+targetEntityType: commerce_product_variation
+bundle: default
+mode: cart
+content:
+  product_id:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  attribute_size: true
+  field_category: true
+  langcode: true
+  list_price: true
+  offer: true
+  price: true
+  price2: true
+  price3: true
+  price4: true
+  price5: true
+  price6: true
+  price7: true
+  price8: true
+  search_api_excerpt: true
+  sku: true
+  stock: true
+  title: true
+  volume_discount_code: true
+  volume_discount_code_pro: true
+  volume_discount_prices: true

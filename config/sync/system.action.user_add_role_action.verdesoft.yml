@@ -1,0 +1,14 @@
+uuid: 1d7b1065-2fb5-4eef-b195-054015a904b7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.verdesoft
+  module:
+    - user
+id: user_add_role_action.verdesoft
+label: 'De rol Verdesoft toewijzen aan de geselecteerde gebruiker(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: verdesoft

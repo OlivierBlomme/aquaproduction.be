@@ -1,0 +1,58 @@
+uuid: 789be089-3816-4c8c-afc4-d08f2766d752
+langcode: nl
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_company
+    - field.field.contact_message.feedback.field_email
+    - field.field.contact_message.feedback.field_name
+    - field.field.contact_message.feedback.field_phone
+_core:
+  default_config_hash: '-R-4nevy_Br4S7U6_Xg3BzIBI4qGuzIv56h-Sf4LWfw'
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_company:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_email:
+    type: basic_string
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_name:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_phone:
+    type: string
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  message:
+    type: basic_string
+    weight: 4
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

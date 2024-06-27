@@ -1,0 +1,24 @@
+uuid: 070f9524-203e-40d1-9c16-6e39be6fe137
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.plantgroups
+_core:
+  default_config_hash: TqL-IkWUG-dhwvNM3Hzvai88ylOLS3FFpSVmipOII6s
+id: taxonomy_term.plantgroups.status
+field_name: status
+entity_type: taxonomy_term
+bundle: plantgroups
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

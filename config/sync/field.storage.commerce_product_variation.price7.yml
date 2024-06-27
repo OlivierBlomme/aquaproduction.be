@@ -1,0 +1,21 @@
+uuid: 07a42dce-b3a7-4514-ae0a-4cdc6a5ae07b
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_price
+    - commerce_product
+_core:
+  default_config_hash: 3ex8B2y9okobmubykyDc0nbPlOGw9Ftx89Dgyi97onE
+id: commerce_product_variation.price7
+field_name: price7
+entity_type: commerce_product_variation
+type: commerce_price
+settings: {  }
+module: commerce_price
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

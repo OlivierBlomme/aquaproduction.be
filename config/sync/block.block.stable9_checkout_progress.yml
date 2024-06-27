@@ -1,0 +1,28 @@
+uuid: 6c5c332c-4952-4b9e-bc88-98b6c3f2ca5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - stable9
+_core:
+  default_config_hash: im7u9rT7k9QD2PJ-ZljcOGMEzrnEb_kgGn4smMtLW4o
+id: stable9_checkout_progress
+theme: stable9
+region: content
+weight: -7
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  label_display: '0'
+  provider: commerce_checkout
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/checkout/*'

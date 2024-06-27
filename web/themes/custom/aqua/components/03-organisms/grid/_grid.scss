@@ -1,0 +1,47 @@
+.grid {
+  &--products_products {
+    @include xs {
+      @include grid(2);
+    }
+    @include small {
+      @include grid(3);
+    }
+    @include medium {
+      @include grid(4);
+    }
+    @include large {
+      @include grid(5);
+    }
+
+    &.grid--block_1 {
+      @include xs {
+        @include grid(2);
+      }
+      @include medium {
+        @include grid(4);
+      }
+    }
+  }
+  &--products_taxonomy {
+    @include medium {
+      @include grid(5);
+    }
+  }
+
+  &--features {
+    margin-top: $space-double;
+    @include large {
+      margin: $space-sextuple auto 0 auto;
+      @include grid(3);
+      column-gap: $space-double;
+    }
+  }
+
+  &--content_recent {
+    //&.grid--page_1{
+    @include small {
+      @include grid(3);
+    }
+    // }
+  }
+}

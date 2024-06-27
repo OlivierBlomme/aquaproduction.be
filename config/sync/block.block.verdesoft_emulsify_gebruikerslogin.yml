@@ -1,0 +1,20 @@
+uuid: b299b225-8b7a-477a-8fe9-be9ce9fe5cf0
+langcode: nl
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - verdesoft_emulsify
+id: verdesoft_emulsify_gebruikerslogin
+theme: verdesoft_emulsify
+region: header
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: Gebruikerslogin
+  label_display: '0'
+  provider: user
+visibility: {  }

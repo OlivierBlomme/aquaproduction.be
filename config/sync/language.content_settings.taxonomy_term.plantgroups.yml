@@ -1,0 +1,20 @@
+uuid: b6cf4b3c-02a5-44fd-a668-d0dc27466b37
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.plantgroups
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: tsSBFDcYdVz-UiqARGGtC4Z06bwnsP8n7n9yALhGanU
+id: taxonomy_term.plantgroups
+target_entity_type_id: taxonomy_term
+target_bundle: plantgroups
+default_langcode: site_default
+language_alterable: true

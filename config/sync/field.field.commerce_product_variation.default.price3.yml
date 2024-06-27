@@ -1,0 +1,26 @@
+uuid: 70aa87bc-3705-433f-ab25-20b3763e2b63
+langcode: nl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.price3
+  module:
+    - commerce_price
+_core:
+  default_config_hash: AlimkVJnlOKfZ8HXGnOhsQ6Nt13cwmrJf5f06H3175o
+id: commerce_product_variation.default.price3
+field_name: price3
+entity_type: commerce_product_variation
+bundle: default
+label: 'Price 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_currencies:
+    - EUR
+  allow_negative: false
+field_type: commerce_price

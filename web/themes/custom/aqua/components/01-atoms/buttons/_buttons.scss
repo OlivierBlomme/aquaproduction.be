@@ -1,0 +1,9 @@
+
+
+.button {
+ 
+  &--carousel {
+    @extend .button--ghost;
+  }
+
+}

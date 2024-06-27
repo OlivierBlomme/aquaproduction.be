@@ -1,0 +1,40 @@
+.carousel_item__content {
+  &--hero {
+    @include large {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.carousel_item__content__inner {
+  &--hero {
+    background: rgba($gray-lightest, 0.8);
+    // background: clr(highlight-high);
+    color: clr(text);
+    border-radius: $border-radius 0;
+    padding: $space;
+
+    @include large {
+      padding: $space-triple;
+      width: 40%;
+      width: 34rem;
+    }
+  }
+}
+
+.carousel_item__title {
+  &--hero {
+    color: clr(primary);
+    @include large {
+      font-size: $h2-font-size;
+    }
+  }
+}
+
+.carousel_item__body__wrapper {
+  font-size: $font-size;
+  > p:first-child {
+    margin: 0;
+  }
+}

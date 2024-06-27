@@ -1,0 +1,46 @@
+name: Aqua Production Theme
+type: theme
+description: Theme using Storybook and component-driven development
+base theme: verdesoft_emulsify
+core: 8.x
+core_version_requirement:  ^9 || ^10
+libraries:
+- aqua/global
+libraries-override:
+  verdesoft_emulsify/global:
+    css:
+      theme:
+        dist/style.css: false
+  googlereviews/googlereviews.rating:
+    css:
+      theme:
+        css/googlereviews-rating.css: false
+
+
+ckeditor_stylesheets:
+- dist/style.css
+regions:
+  header_top: Top Header
+  header: Header
+  header_bottom: Bottom Header
+  content: Content
+  content_top: Content Top # the content region is required
+  content_bottom: Content Bottom # the content region is required
+  sidebar: Sidebar
+  footer_top: Top Footer
+  footer: Footer
+  footer_bottom: Bottom Footer
+  user_utilities: User Utilities
+#logo: images/logo.svg
+components:
+  namespaces:
+    base:
+    - components/00-base
+    atoms:
+    - components/01-atoms
+    molecules:
+    - components/02-molecules
+    organisms:
+    - components/03-organisms
+    templates:
+    - components/04-templates

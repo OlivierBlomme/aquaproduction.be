@@ -1,0 +1,64 @@
+uuid: cff847cd-2c8a-441c-9943-caf1adc3f5f7
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - image
+_core:
+  default_config_hash: latoiGuLAfDHTAb5txqPt5obBFujcuczr52u54aXJ2k
+id: product_images_base
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: general
+label: 'Product image files'
+source:
+  plugin: product_images
+  track_changes: true
+  constants:
+    source_folder: ../home/username
+    dest_uri: 'public://products'
+process:
+  fid: {  }
+  langcode:
+    plugin: default_value
+    default_value: nl
+  uid:
+    plugin: default_value
+    default_value: 1
+  file_source_name: image_name
+  file_dest_name:
+    -
+      plugin: callback
+      callable: strtolower
+      source: image_name
+    -
+      plugin: str_replace
+      case_insensitive: true
+      search: ' '
+      replace: '-'
+  file_source:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/source_folder
+        - '@file_source_name'
+  file_dest:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/dest_uri
+        - '@file_dest_name'
+  uri:
+    plugin: file_copy
+    source:
+      - '@file_source'
+      - '@file_dest'
+    file_exists: replace
+destination:
+  plugin: 'entity:file'
+migration_dependencies: null

@@ -1,0 +1,16 @@
+.page__pre-title,
+.block__pre_title,
+.node__pre_title {
+  &--front-page {
+    font-family: $heading-font-family;
+    letter-spacing: 1px;
+    color: clr(primary);
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    font-weight: 500;
+  }
+}
+
+.page__pre-title {
+  margin-bottom: $space;
+}

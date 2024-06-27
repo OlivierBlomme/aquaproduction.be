@@ -1,0 +1,12 @@
+uuid: a0baa9ab-089e-4b24-abd4-8b0d0a55884e
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XvQNk9KVyi8yUUs6M7pxY0SdCqfjurf-uq90cmHufj8
+id: categories
+label: Productcategorieën
+description: 'All product category related migrations'
+source_type: null
+module: null
+shared_configuration: null

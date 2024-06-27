@@ -1,0 +1,47 @@
+uuid: ec967189-0c67-49e4-a4b3-06f7ea25c34c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.plantgroups
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+_core:
+  default_config_hash: kv4RSlC-41velML-3bgoA4J90aJfJ68BJwcajYqh4go
+id: taxonomy_term.plantgroups.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: plantgroups
+label: Afbeelding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: categories
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: 'Vaste plant'
+    title: ''
+    width: 1280
+    height: 854
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

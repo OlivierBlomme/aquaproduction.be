@@ -1,0 +1,18 @@
+uuid: 3f9d4721-3362-4742-ba51-3ef9847f8195
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - aqua
+id: aqua_paginatitel
+theme: aqua
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Paginatitel
+  label_display: '0'
+  provider: core
+visibility: {  }

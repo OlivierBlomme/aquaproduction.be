@@ -1,0 +1,26 @@
+uuid: 8afeb85a-a1ff-4a98-bdcc-2102420848a2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.size
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.attribute_size
+_core:
+  default_config_hash: hDQlJ_0Ji18jGmHbtPK-2XQ7j0tUa7Lxt4qk1XPT8ZM
+id: commerce_product_variation.default.attribute_size
+field_name: attribute_size
+entity_type: commerce_product_variation
+bundle: default
+label: Potmaat
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - size
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: ced77614-1349-4636-823c-bba4cd2f10b0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.volume_discount_code_pro
+    - taxonomy.vocabulary.plantgroups
+_core:
+  default_config_hash: P7PWlw8IroECC2XnuHBTo5hWOliEN_WpUQdz-PdYAtk
+id: taxonomy_term.plantgroups.volume_discount_code_pro
+field_name: volume_discount_code_pro
+entity_type: taxonomy_term
+bundle: plantgroups
+label: 'Volume discount code pro'
+description: 'Volume korting code voor professionele klanten'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

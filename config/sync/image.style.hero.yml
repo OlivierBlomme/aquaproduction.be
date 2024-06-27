@@ -1,0 +1,14 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: hero
+label: 'Hero afbeelding'
+effects:
+  5a802dee-06a7-4ca1-869a-406e4d39cc02:
+    uuid: 5a802dee-06a7-4ca1-869a-406e4d39cc02
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 450
+      anchor: center-center

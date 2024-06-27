@@ -1,0 +1,20 @@
+uuid: 2c2e9bcb-caf9-49eb-bbcf-c77daf4a17c5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: gGbHM14Dj7F14vPWT5kruBq8S-r2Mh8blZ_rQrIC4fE
+name: 'Slider item'
+type: slider_item
+description: 'Voeg een slide toe aan de Slider op de homepagina'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

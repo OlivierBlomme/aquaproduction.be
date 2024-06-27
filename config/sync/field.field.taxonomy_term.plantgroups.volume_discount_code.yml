@@ -1,0 +1,21 @@
+uuid: d462948f-a1e1-4b3c-bcd6-09e9f0403ca1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.volume_discount_code
+    - taxonomy.vocabulary.plantgroups
+_core:
+  default_config_hash: 0G06TS4RuEO-1KpMpdkscU3x8lPA0QESQ7jlzb7s56A
+id: taxonomy_term.plantgroups.volume_discount_code
+field_name: volume_discount_code
+entity_type: taxonomy_term
+bundle: plantgroups
+label: 'Volume discount code'
+description: 'Volume korting code voor particuliere klanten'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,58 @@
+.header {
+  &__inner {
+    &--top {
+      color: clr(text-inverse);
+      padding: 0.75rem $space;
+
+      &:before {
+        background: clr(primary);
+      }
+    }
+    &--primary {
+      .page-node-1 & {
+        &:before {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.block-branding__logo {
+  max-width: 200px;
+  @include medium {
+    max-width: 250px;
+  }
+}
+
+#block-aqua-main-menu {
+  @include large {
+    order: 2;
+  }
+}
+
+.user-utilities {
+  @include large {
+    flex: 1;
+    order: 3;
+  }
+}
+
+#block-aqua-branding {
+  @include large {
+    order: 1;
+    flex: 1;
+  }
+}
+
+#block-aqua-exposed-form-products-productspage-2 {
+  flex-basis: 100%;
+
+  @include large {
+    flex-basis: auto;
+    flex: 1;
+    display: inline-flex;
+    justify-content: flex-end;
+    order: 3;
+  }
+}

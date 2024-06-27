@@ -1,0 +1,29 @@
+uuid: f98f1239-5957-4542-8f14-8e1c8cfed9a1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.user.client_type
+  module:
+    - user
+_core:
+  default_config_hash: FGrba8Y_UxZslBDV5VNpgsIKl-tFPz6hFL4W86v-OeQ
+id: user.user.client_type
+field_name: client_type
+entity_type: user
+bundle: user
+label: 'Client type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\verdesoft_pricing\Entity\User::getDefaultClientTypeId'
+settings:
+  handler: 'default:client_type'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

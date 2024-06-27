@@ -1,0 +1,25 @@
+uuid: 3ebce369-ed11-474a-b28b-ab1445d87478
+langcode: nl
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.offer
+_core:
+  default_config_hash: 63N7rneXUS9smehq4CsjwfSeuil4LZAL_eH_esxJP9w
+id: commerce_product_variation.default.offer
+field_name: offer
+entity_type: commerce_product_variation
+bundle: default
+label: Aanbieding
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Ja
+  off_label: Nee
+field_type: boolean

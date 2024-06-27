@@ -1,0 +1,20 @@
+uuid: 8f29b892-95c0-4b8f-af02-f0832a3f1484
+langcode: nl
+status: true
+dependencies:
+  module:
+    - verdesoft
+  theme:
+    - aqua
+id: aqua_joluxsignatureblock
+theme: aqua
+region: footer
+weight: 0
+provider: null
+plugin: jolux_signature_block
+settings:
+  id: jolux_signature_block
+  label: 'Jolux signature block'
+  label_display: '0'
+  provider: verdesoft
+visibility: {  }

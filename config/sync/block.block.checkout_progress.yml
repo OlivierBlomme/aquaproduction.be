@@ -1,0 +1,28 @@
+uuid: 20f759b2-f5b3-49e7-97b1-88d8339c0fab
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - verdesoft_emulsify
+_core:
+  default_config_hash: im7u9rT7k9QD2PJ-ZljcOGMEzrnEb_kgGn4smMtLW4o
+id: checkout_progress
+theme: verdesoft_emulsify
+region: content
+weight: -7
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: Betalingsvoortgang
+  label_display: '0'
+  provider: commerce_checkout
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/checkout/*'

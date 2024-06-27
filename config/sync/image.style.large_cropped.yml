@@ -1,0 +1,17 @@
+uuid: aec2f39c-e352-43a3-83a6-39716bfa5287
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ae68RRXWIhTClrUsGNbfCnHDjx78Z6LTzFGmS2ilnw0
+name: large_cropped
+label: 'Groot cropped (480×360)'
+effects:
+  e0f6365e-b1a2-4091-a409-a84842a0799b:
+    uuid: e0f6365e-b1a2-4091-a409-a84842a0799b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 360
+      anchor: center-center

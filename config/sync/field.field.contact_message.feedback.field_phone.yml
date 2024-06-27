@@ -1,0 +1,21 @@
+uuid: 3088988c-cfa0-49e4-96a7-cb45a41cef78
+langcode: nl
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_phone
+_core:
+  default_config_hash: qGWQ7D0zv81bEsI2ZHkhhRfBNxYHMUutI7gSr0ggDjE
+id: contact_message.feedback.field_phone
+field_name: field_phone
+entity_type: contact_message
+bundle: feedback
+label: 'Telefoon / GSM'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

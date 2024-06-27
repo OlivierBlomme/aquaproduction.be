@@ -1,0 +1,29 @@
+uuid: b3df197a-799e-4451-a100-867d9546e525
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - aqua
+id: aqua_views_block__slider_block_1
+theme: aqua
+region: content_top
+weight: 0
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

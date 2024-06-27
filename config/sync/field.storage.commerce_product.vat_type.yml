@@ -1,0 +1,23 @@
+uuid: cc2429b8-fbe4-452d-a849-9f59cae018de
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+_core:
+  default_config_hash: jdRytwwHkHTDFUO4ZxulyhCcgLFoxjm3b03XH8IT5L4
+id: commerce_product.vat_type
+field_name: vat_type
+entity_type: commerce_product
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: verdesoft_tax_vat_types_allowed_values
+module: options
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

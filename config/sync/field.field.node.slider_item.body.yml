@@ -1,0 +1,26 @@
+uuid: 4ab9ed0a-f2cc-492d-bd31-91339fdc56b7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slider_item
+  module:
+    - text
+_core:
+  default_config_hash: vhMNzOHvRwb9NZXEjSwa9Q6wC0DKEPoDLb6n_Q5MNfk
+id: node.slider_item.body
+field_name: body
+entity_type: node
+bundle: slider_item
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

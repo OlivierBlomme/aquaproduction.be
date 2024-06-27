@@ -1,0 +1,10 @@
+uuid: f824cd50-3cbd-48f8-a05d-38b8f7669176
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bqZsN31T2n0UjcbyCpOPi9D2iO0sAOHR7FnEs9qMvaA
+id: comment
+label: Standaardreacties
+target_entity_type_id: node
+description: 'Staat het reageren op de inhoud toe'

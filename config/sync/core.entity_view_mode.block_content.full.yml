@@ -1,0 +1,13 @@
+uuid: 46621a41-80e3-45b9-9e79-16bc72966352
+langcode: nl
+status: false
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: Q7yUUYeRLByl-MCGveKKF_KhAtNICLCMJuKWfugCvso
+id: block_content.full
+label: Volledig
+description: ''
+targetEntityType: block_content
+cache: true

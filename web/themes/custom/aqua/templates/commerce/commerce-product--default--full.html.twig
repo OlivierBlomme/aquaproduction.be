@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+
+
+
+{% extends "themes/contrib/verdesoft_emulsify/templates/commerce/commerce-product--default--full.html.twig" %}
+
+         {% block variations_extra %}
+
+           {% embed "@molecules/modal/modal.twig"  with {
+             modal__heading:'What do the plant sizes mean?'|t,
+             modal__id: 'helpModal',
+             modal__heading_level:4,
+           } %}
+             {% block modal__link__content %}
+               {% include "@atoms/images/icons/_icon.twig" with {
+                 icon_name: "info-circle",
+               } %}
+               {% include "@atoms/links/link/link.twig" with {
+
+                 link_content: 'What do the plant sizes mean?'|t,
+                 link_attributes:{'data-bs-toggle': 'modal'},
+                 link_url:'#helpModal',
+               } %}
+             {% endblock %}
+
+             {% block modal__content %}
+               {{ faq }}
+             {% endblock %}
+           {% endembed %}
+
+           {% embed "@atoms/text/text/08-alert.twig"  with {
+             alert_modifiers:['warning'],
+
+           } %}
+             {% block alert_content %}
+               {% trans %}
+                 <p>Onze webshop is een assortimentslijst, geen voorraadlijst.</p>
+               {% endtrans %}
+             {% endblock %}
+           {% endembed %}
+
+
+         {% endblock %}
+
+
+

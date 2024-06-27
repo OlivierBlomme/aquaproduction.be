@@ -1,0 +1,20 @@
+uuid: ecbbc152-e9f2-473e-be57-67efa1c10779
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.plantgroups
+_core:
+  default_config_hash: TK0aadziPNkM9LVJzj0RxowBqzQ8No-MMXYlPWPUync
+id: taxonomy_term.plantgroups.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: plantgroups
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

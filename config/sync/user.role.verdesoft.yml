@@ -1,0 +1,30 @@
+uuid: 9e8edcfd-6d60-42a0-a002-6a61042169b8
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - profile
+_core:
+  default_config_hash: ZOxdkQdfWcBGt7c9uUiRdPt_DFb2cosZemzHKUuw6hM
+id: verdesoft
+label: Verdesoft
+weight: 3
+is_admin: null
+permissions:
+  - 'access commerce_order overview'
+  - 'access user profiles'
+  - 'add commerce_log commerce_order admin comment'
+  - 'administer commerce_order'
+  - 'administer commerce_order_type'
+  - 'administer users'
+  - 'create default commerce_order'
+  - 'delete default commerce_order'
+  - 'manage default commerce_order_item'
+  - 'update default commerce_order'
+  - 'view any customer profile'
+  - 'view any profile'
+  - 'view commerce_order'
+  - 'view default commerce_order'
+  - 'view own customer profile'
+  - 'view own profile'

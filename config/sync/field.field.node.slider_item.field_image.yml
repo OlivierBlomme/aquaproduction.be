@@ -1,0 +1,29 @@
+uuid: 2f7b6042-b926-4df8-9585-9ecd3b2e2251
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.slider_item
+id: node.slider_item.field_image
+field_name: field_image
+entity_type: node
+bundle: slider_item
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

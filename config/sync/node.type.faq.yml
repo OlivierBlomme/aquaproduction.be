@@ -1,0 +1,19 @@
+uuid: 00eeeef9-6ee4-46f4-8db4-421a8050c3ca
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: M_yQv317J6jjZ3ti1yscvRckMfxAxbZITGlQQR7CM1s
+name: 'Veel gestelde vraag'
+type: faq
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

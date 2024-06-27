@@ -1,0 +1,10 @@
+.facet {
+// background: clr(bg);;
+ // padding: $space;
+ // box-shadow:$box-shadow;
+ // border: $border-width $border-style clr(border);
+ // border-radius:$border-radius;
+}
+.facet__heading {
+  @include heading-small;
+}

@@ -1,0 +1,100 @@
+uuid: 8f77247b-aa4c-4619-8aa4-ddd5ef1c61ea
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0xzoaNWXjSeXsJgNJ4u7wd1UlD9jwbPGm3lAG4f5-4w
+id: commerce_product_variations_default
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: products
+label: Productvariaties
+source:
+  plugin: commerce_product_variations_default
+  track_changes: true
+process:
+  title:
+    plugin: get
+    source: latin_name
+  sku:
+    plugin: get
+    source: id
+  uid:
+    plugin: default_value
+    default_value: 1
+  type:
+    plugin: default_value
+    default_value: default
+  offer: offer
+  stock: stock
+  volume_discount_code: volume_discount_code
+  volume_discount_code_pro: volume_discount_code_pro
+  price/number:
+    plugin: get
+    source: price_1
+  price/currency_code:
+    plugin: default_value
+    default_value: EUR
+  price2/number:
+    plugin: get
+    source: price_2
+  price2/currency_code:
+    plugin: default_value
+    default_value: EUR
+  price3/number:
+    plugin: get
+    source: price_3
+  price3/currency_code:
+    plugin: default_value
+    default_value: EUR
+  price4/number:
+    plugin: get
+    source: price_4
+  price4/currency_code:
+    plugin: default_value
+    default_value: EUR
+  price5/number:
+    plugin: get
+    source: price_5
+  price5/currency_code:
+    plugin: default_value
+    default_value: EUR
+  price6/number:
+    plugin: get
+    source: price_6
+  price6/currency_code:
+    plugin: default_value
+    default_value: EUR
+  price7/number:
+    plugin: get
+    source: price_7
+  price7/currency_code:
+    plugin: default_value
+    default_value: EUR
+  price8/number:
+    plugin: get
+    source: price_8
+  price8/currency_code:
+    plugin: default_value
+    default_value: EUR
+  attribute_size:
+    plugin: migration_lookup
+    migration: commerce_product_attribute_size
+    source: size
+  field_category/target_id:
+    plugin: migration_lookup
+    migration:
+      - plantgroups_sub_terms_default
+      - plantgroups_root_terms_default
+    source_ids:
+      plantgroups_sub_terms_default:
+        - sub_group_id
+      plantgroups_root_terms_default:
+        - group_id
+destination:
+  plugin: 'entity:commerce_product_variation'
+migration_dependencies:
+  optional:
+    - commerce_product_attribute_size

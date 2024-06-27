@@ -1,0 +1,65 @@
+uuid: 2e298879-5090-403b-a58a-8bc41ddfadb1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_company
+    - field.field.contact_message.feedback.field_email
+    - field.field.contact_message.feedback.field_name
+    - field.field.contact_message.feedback.field_phone
+_core:
+  default_config_hash: BjHSuknaYuU_8um8DUNl2bUhrVqRR-7U9JEyOzJ4z9U
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_company:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 4
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  copy: true
+  field_telefoon: true
+  langcode: true
+  mail: true
+  name: true
+  preview: true
+  subject: true

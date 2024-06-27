@@ -1,0 +1,14 @@
+uuid: 7f62bfd4-09c1-4540-9f48-7af5f8a2a575
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.verdesoft
+  module:
+    - user
+id: user_remove_role_action.verdesoft
+label: 'De rol Verdesoft verwijderen van de geselecteerde gebruikers(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: verdesoft

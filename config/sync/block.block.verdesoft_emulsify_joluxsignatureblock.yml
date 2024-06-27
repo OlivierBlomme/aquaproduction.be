@@ -1,0 +1,20 @@
+uuid: a126d642-02c9-4985-8077-83f2cdf0f1de
+langcode: nl
+status: true
+dependencies:
+  module:
+    - verdesoft
+  theme:
+    - verdesoft_emulsify
+id: verdesoft_emulsify_joluxsignatureblock
+theme: verdesoft_emulsify
+region: footer
+weight: 0
+provider: null
+plugin: jolux_signature_block
+settings:
+  id: jolux_signature_block
+  label: 'Jolux signature block'
+  label_display: '0'
+  provider: verdesoft
+visibility: {  }

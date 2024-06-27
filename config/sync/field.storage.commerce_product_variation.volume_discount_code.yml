@@ -1,0 +1,23 @@
+uuid: 7009b30c-2acc-4e85-844e-f5a867b5e878
+langcode: nl
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: qpCqAwdzkcgevNjLmtZpeMeQN6l05qmod1rP6rjbTSQ
+id: commerce_product_variation.volume_discount_code
+field_name: volume_discount_code
+entity_type: commerce_product_variation
+type: string
+settings:
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

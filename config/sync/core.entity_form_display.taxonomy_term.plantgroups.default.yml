@@ -1,0 +1,73 @@
+uuid: 6c047595-7dfb-482a-9035-f88ec7bae55e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.plantgroups.field_image
+    - field.field.taxonomy_term.plantgroups.volume_discount_code
+    - field.field.taxonomy_term.plantgroups.volume_discount_code_pro
+    - image.style.thumbnail
+    - taxonomy.vocabulary.plantgroups
+  module:
+    - image
+    - path
+    - text
+_core:
+  default_config_hash: SEwrNYXDrUPoeTY7r7hSNixyZ_QOaUsxcu-BBsy6ZJU
+id: taxonomy_term.plantgroups.default
+targetEntityType: taxonomy_term
+bundle: plantgroups
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  volume_discount_code: true
+  volume_discount_code_pro: true

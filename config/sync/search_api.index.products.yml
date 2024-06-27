@@ -1,0 +1,82 @@
+uuid: d5a8d5e8-91c1-4d56-8307-d5bd672134ba
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.field_category
+    - field.storage.commerce_product.field_name
+    - field.storage.commerce_product_variation.offer
+    - search_api.server.default_server
+  module:
+    - commerce_product
+    - search_api
+_core:
+  default_config_hash: IvqXv0HKQI8mtI7fr2USk_6y-Px5dvJ14H7iceuAHg8
+id: products
+name: 'Product index'
+description: 'Product index created by the Verdesoft install profile'
+read_only: false
+field_settings:
+  field_category:
+    label: Categorie
+    datasource_id: 'entity:commerce_product'
+    property_path: field_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_category
+  field_name:
+    label: 'Nederlandse naam'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_name
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_name
+  offer:
+    label: 'Variaties » Productvariatie » Aanbieding'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:offer'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.offer
+      module:
+        - commerce_product
+  title:
+    label: Titel
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_name
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: false
+  cron_limit: 50
+  track_changes_in_references: true
+server: default_server

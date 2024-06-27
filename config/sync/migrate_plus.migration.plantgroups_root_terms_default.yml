@@ -1,0 +1,60 @@
+uuid: f4783aa1-af99-4f63-98d9-bcbe2ffc08b4
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - taxonomy
+_core:
+  default_config_hash: YsTxohjmv37yqfxIBZLeQEMQktn-GWmY4wGKOukcqTk
+id: plantgroups_root_terms_default
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: categories
+label: 'Dutch plantgroup root terms'
+source:
+  plugin: plantgroups_root_terms_default
+  track_changes: true
+process:
+  vid:
+    plugin: default_value
+    default_value: plantgroups
+  parent:
+    -
+      plugin: skip_on_empty
+      source: division_id
+      method: process
+      message: 'No division parent ID found, continuing without setting parent.'
+    -
+      plugin: migration_lookup
+      migration: plantgroup_division_terms
+      source: division_id
+      no_stub: true
+  name:
+    -
+      plugin: get
+      source: name_nl
+      language: nl
+  volume_discount_code:
+    -
+      plugin: get
+      source: volume_discount_code
+  volume_discount_code_pro:
+    -
+      plugin: get
+      source: volume_discount_code_pro
+  uid:
+    -
+      plugin: default_value
+      default_value: 1
+  langcode:
+    -
+      plugin: default_value
+      default_value: nl
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  required:
+    - plantgroups_divisions_terms_default

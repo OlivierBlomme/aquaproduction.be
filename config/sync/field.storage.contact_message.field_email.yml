@@ -1,0 +1,20 @@
+uuid: be3dbe56-0f88-4691-94d8-b952c6dea766
+langcode: nl
+status: true
+dependencies:
+  module:
+    - contact
+_core:
+  default_config_hash: BqHAiti-ekfkDSni9ZXo7X5LlLaNQvDai7XNeRtdAlI
+id: contact_message.field_email
+field_name: field_email
+entity_type: contact_message
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

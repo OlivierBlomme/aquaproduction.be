@@ -1,0 +1,42 @@
+// 1. Import Parent's Defaults (Variables, Mixins, etc.)
+@import "../../../contrib/verdesoft_emulsify/components/00-base/00-defaults/*.scss";
+@import "../../../contrib/verdesoft_emulsify/components/00-base/01-colors/_00-colors-vars.scss";
+
+// 2. Import Child's Variables to override some of the parent's variables
+@import "00-base/00-defaults/*.scss";
+@import "00-base/01-colors/_00-colors-vars.scss";
+
+@import "../../../contrib/verdesoft_emulsify/components/00-base/01-colors/_01-colors-used.scss";
+@import "00-base/01-colors/_01-colors-used.scss";
+
+// 3. Import Parent theme's styles (using the child's overridden variables)
+
+// Parent theme's base
+//@import "../../../contrib/verdesoft_emulsify/components/00-base/01-colors/**/*.scss";
+@import "../../../contrib/verdesoft_emulsify/components/00-base/02-motion/**/*.scss";
+@import "../../../contrib/verdesoft_emulsify/components/00-base/03-site/**/*.scss";
+
+// Parent theme's atoms
+@import "../../../contrib/verdesoft_emulsify/components/01-atoms/**/*.scss";
+
+// Parent theme's molecules
+@import "../../../contrib/verdesoft_emulsify/components/02-molecules/**/*.scss";
+
+// Parent theme's organisms
+@import "../../../contrib/verdesoft_emulsify/components/03-organisms/**/*.scss";
+
+// Parent theme's templates
+@import "../../../contrib/verdesoft_emulsify/components/04-templates/**/*.scss";
+
+// 4. Import Child's component styles to override parent's where necessary
+@import "00-base/**/*.scss";
+@import "01-atoms/**/*.scss";
+@import "02-molecules/**/*.scss";
+@import "03-organisms/**/*.scss";
+@import "04-templates/**/*.scss";
+
+@import "../../../contrib/verdesoft_emulsify/components/_product.scss";
+@import "../../../contrib/verdesoft_emulsify/components/_product-print.scss";
+@import "../../../contrib/verdesoft_emulsify/components/_field.scss";
+@import "../../../contrib/verdesoft_emulsify/components/_verdesoft_user.scss";
+@import "../../../contrib/verdesoft_emulsify/components/_verdesoft_checkout.scss";

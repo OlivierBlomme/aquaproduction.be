@@ -1,0 +1,18 @@
+.main {
+  &--front-page {
+    padding-top: $space-triple;
+    padding-bottom: $space-triple;
+    background: clr(highlight-high);
+
+    @include medium {
+      padding-top: $space-sextuple;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.main-content {
+  &--front-page {
+    padding: 0;
+  }
+}
