@@ -1,6 +1,6 @@
 _core:
   default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
-langcode: nl
+langcode: fr
 uuid: f2789a7e-599e-4c9e-8ee5-09152b0fa784
 name: 'Aqua Production'
 mail: olivier@jolux-webdesign.be
@@ -12,4 +12,4 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: fr
-mail_notification: null
+mail_notification: ''

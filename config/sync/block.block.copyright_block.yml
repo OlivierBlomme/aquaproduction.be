@@ -1,0 +1,20 @@
+uuid: c9ac68f6-552e-4ee7-9365-e7998fc79827
+langcode: fr
+status: true
+dependencies:
+  module:
+    - verdesoft
+  theme:
+    - aqua
+id: copyright_block
+theme: aqua
+region: footer_bottom
+weight: -9
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright block'
+  label_display: '0'
+  provider: verdesoft
+visibility: {  }

@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: dTfAUHooYV0uOVPO3saGpgv-c5PppJXDwxvwRTJOycM
 id: media.full
-label: 'Contenu complet'
+label: 'Volledige inhoud'
 description: ''
 targetEntityType: media
 cache: true

@@ -1,0 +1,25 @@
+uuid: 570cf42b-fd7c-4603-b253-5da622071d5c
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1ab76a2c-12a0-4c41-ad55-f9c68f111546'
+  module:
+    - block_content
+  theme:
+    - aqua
+id: hours
+theme: aqua
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:1ab76a2c-12a0-4c41-ad55-f9c68f111546'
+settings:
+  id: 'block_content:1ab76a2c-12a0-4c41-ad55-f9c68f111546'
+  label: "Horaire d'ouverture"
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

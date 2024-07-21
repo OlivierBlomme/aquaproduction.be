@@ -25,7 +25,7 @@ base_field: mid
 display:
   default:
     id: default
-    display_title: 'Par défaut'
+    display_title: Standaard
     display_plugin: default
     position: 0
     display_options:
@@ -81,7 +81,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: Actie
           include_exclude: exclude
           selected_actions: {  }
         rendered_entity:
@@ -148,22 +148,22 @@ display:
             previous: ‹‹
           expose:
             items_per_page: false
-            items_per_page_label: 'Éléments par page'
+            items_per_page_label: 'Items per pagina'
             items_per_page_options: '6, 12, 24, 48'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tout -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Décalage
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
           submit_button: 'Appliquer les filtres'
           reset_button: false
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
           expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
       access:
         type: perm
         options:
@@ -261,7 +261,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: Publié
+            label: Gepubliceerd
             description: ''
             identifier: status
             optional: true
@@ -272,11 +272,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Publié
+                title: Gepubliceerd
                 operator: '='
                 value: '1'
               2:
-                title: 'Non publié'
+                title: 'Niet gepubliceerd'
                 operator: '='
                 value: '0'
         name:
@@ -295,7 +295,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: Nom
+            label: Naam
             description: ''
             use_operator: false
             operator: name_op
@@ -422,7 +422,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Langue
+            label: Taal
             description: ''
             use_operator: false
             operator: langcode_op
@@ -488,7 +488,7 @@ display:
       tags: {  }
   page:
     id: page
-    display_title: Page
+    display_title: Pagina
     display_plugin: page
     position: 1
     display_options:
@@ -543,7 +543,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: Actie
           include_exclude: exclude
           selected_actions: {  }
         name:
@@ -910,7 +910,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Tout
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -993,7 +993,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: Nom
+            label: Naam
             description: ''
             use_operator: false
             operator: name_op
@@ -1142,7 +1142,7 @@ display:
           entity_type: media
           entity_field: name
           plugin_id: field
-          label: Nom
+          label: Naam
           type: string
           settings:
             link_to_entity: false
@@ -1166,7 +1166,7 @@ display:
           entity_type: media
           entity_field: changed
           plugin_id: field
-          label: 'Mis à jour'
+          label: Bijgewerkt
           type: timestamp
           settings:
             date_format: short
@@ -1200,7 +1200,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Tout
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -1283,7 +1283,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: Nom
+            label: Naam
             description: ''
             use_operator: false
             operator: name_op

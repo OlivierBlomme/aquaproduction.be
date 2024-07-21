@@ -1,0 +1,11 @@
+uuid: eea90d9c-cec1-45a8-a40c-8d605cef5c57
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.card_alt
+label: 'Card Alt'
+description: ''
+targetEntityType: taxonomy_term
+cache: true

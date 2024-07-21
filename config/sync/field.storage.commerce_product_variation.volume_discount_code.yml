@@ -1,5 +1,5 @@
 uuid: 7009b30c-2acc-4e85-844e-f5a867b5e878
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -12,8 +12,8 @@ entity_type: commerce_product_variation
 type: string
 settings:
   max_length: 10
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

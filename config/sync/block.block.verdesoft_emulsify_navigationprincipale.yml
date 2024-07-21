@@ -1,0 +1,25 @@
+uuid: 7c9e988b-1ad5-4878-a507-430024df039f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - verdesoft_emulsify
+id: verdesoft_emulsify_navigationprincipale
+theme: verdesoft_emulsify
+region: header
+weight: -2
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navigation principale'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

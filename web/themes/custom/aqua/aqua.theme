@@ -1,6 +1,8 @@
 <?php
 
-use Drupal\views\Views;
+
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Render\Element;
 
 /**
  * Implements hook_preprocess_page_title() for page title templates.
@@ -17,7 +19,7 @@ function aqua_preprocess_page_title(array &$variables)
 
 /**
  * Implements hook_preprocess_block() for block templates.
- */
+
 function aqua_preprocess_block(array &$variables)
 {
   if (\Drupal::service('path.matcher')->isFrontPage()) {
@@ -29,7 +31,7 @@ function aqua_preprocess_block(array &$variables)
     }
   }
 }
-
+*/
 /**
  * Implements hook_preprocess_block() for block templates.
  */
@@ -43,3 +45,11 @@ function aqua_preprocess_node(array &$variables)
   }
 }
 
+
+
+function aqua_preprocess_layout(array &$variables) {
+  // Use Kint for dumping variables in Drupal 10.
+ dump($variables);
+
+
+}

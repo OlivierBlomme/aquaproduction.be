@@ -1,0 +1,34 @@
+label: Activiteit
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      fields:
+        created:
+          label: Datum
+          separator: ', '
+        rendered_entity:
+          label: Bericht
+        uid:
+          label: Gebruiker
+          separator: ', '
+      title: Bestellingslogs
+      empty:
+        area_text_custom:
+          content: 'Geen logs aanwezig.'
+      arguments:
+        source_entity_id:
+          exception:
+            title: Alle
+        source_entity_type:
+          exception:
+            title: Alle
+  block_1:
+    display_title: Blok

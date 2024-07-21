@@ -1,5 +1,5 @@
 uuid: ae07f48f-7612-496b-8ce8-6315f1095569
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -26,28 +26,34 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
+  attribute_size:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   list_price:
     type: commerce_list_price
-    weight: -1
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   price:
     type: commerce_price_default
-    weight: 0
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   sku:
     type: string_textfield
-    weight: -4
+    weight: 0
     region: content
     settings:
       size: 60
@@ -55,13 +61,12 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 4
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
 hidden:
-  attribute_size: true
   created: true
   field_category: true
   offer: true

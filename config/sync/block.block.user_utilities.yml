@@ -1,0 +1,21 @@
+uuid: a84a43fe-7f70-4f1d-94ba-83fa2c45e2c4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - verdesoft
+  theme:
+    - aqua
+id: user_utilities
+theme: aqua
+region: header
+weight: -4
+provider: null
+plugin: placeholder_block
+settings:
+  id: placeholder_block
+  label: 'User utilities'
+  label_display: visible
+  provider: verdesoft
+  selected_region: user_utilities
+visibility: {  }

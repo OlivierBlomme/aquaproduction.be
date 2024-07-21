@@ -1,6 +1,6 @@
 uuid: 0f6cb206-6381-4b17-bfd9-a294b8f9f22d
-langcode: nl
-status: true
+langcode: fr
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -27,9 +27,16 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_images:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   comment: true
-  field_images: true
   field_tags: true
   langcode: true
   links: true

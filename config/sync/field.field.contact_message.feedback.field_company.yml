@@ -1,5 +1,5 @@
 uuid: fd9f7f5e-3cf5-4e50-b792-e2ff347ae107
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ id: contact_message.feedback.field_company
 field_name: field_company
 entity_type: contact_message
 bundle: feedback
-label: Bedrijf
+label: Entreprise
 description: ''
 required: false
 translatable: false

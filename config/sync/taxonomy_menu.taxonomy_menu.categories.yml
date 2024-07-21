@@ -1,0 +1,16 @@
+uuid: 7706f115-f853-46aa-a67c-eaf1f1f68dbf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer-categories
+    - taxonomy.vocabulary.plantgroups
+id: categories
+label: Categories
+vocabulary: plantgroups
+menu: footer-categories
+expanded: false
+depth: 0
+menu_parent: 'admin:'
+description_field_name: null
+use_term_weight_order: true

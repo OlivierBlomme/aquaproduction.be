@@ -1,5 +1,5 @@
 uuid: 5c7b3a73-cf93-45ec-ac92-8891ac7f94b3
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -28,5 +28,8 @@ hidden:
   langcode: true
   mail: true
   name: true
+  prices_include_tax: true
+  search_api_excerpt: true
+  tax_registrations: true
   timezone: true
   uid: true

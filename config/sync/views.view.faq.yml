@@ -1,5 +1,5 @@
 uuid: ca0dcb28-14c4-4797-a3f4-3be2db519a15
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Veelgestelde vragen'
+      title: 'Questions fréquemment posées'
       fields:
         title:
           id: title
@@ -77,6 +77,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 25
           total_pages: null
           id: 0
@@ -91,7 +92,6 @@ display:
             items_per_page_options_all_label: '- Alle -'
             offset: false
             offset_label: Startpunt
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

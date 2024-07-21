@@ -1,5 +1,5 @@
 uuid: 00a14e72-1d6a-494d-8c50-27e8d402a813
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -26,36 +26,29 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
-  attribute_size:
-    type: entity_reference_label
-    weight: 1
-    region: content
-    label: inline
-    settings:
-      link: false
-    third_party_settings: {  }
   offer:
     type: boolean
-    weight: 2
-    region: content
     label: hidden
     settings:
       format: boolean
-      format_custom_true: ''
       format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-  volume_discount_prices:
-    label: hidden
-    weight: 0
-    default_formatter: product_variation_calculated_prices
+    weight: 2
     region: content
+  volume_discount_prices:
+    type: product_variation_calculated_prices
+    label: hidden
     settings:
       adjustment_types: {  }
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
-    type: product_variation_calculated_prices
+    weight: 0
+    region: content
+    default_formatter: product_variation_calculated_prices
 hidden:
+  attribute_size: true
   field_category: true
   langcode: true
   list_price: true

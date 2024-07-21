@@ -1,0 +1,11 @@
+uuid: 11a63f6a-860f-4c07-a64f-2d3ead760412
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_a
+label: 'Card Link'
+description: ''
+targetEntityType: media
+cache: true

@@ -2,7 +2,7 @@ label: 'Blocs de contenu'
 description: 'Trouver et gérer les blocs de contenu.'
 display:
   default:
-    display_title: 'Par défaut'
+    display_title: Master
     display_options:
       title: 'Blocs de contenu'
       fields:
@@ -27,9 +27,9 @@ display:
             offset_label: Décalage
       exposed_form:
         options:
-          submit_button: Appliquer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       empty:

@@ -1,5 +1,5 @@
 uuid: f6a85c5e-08a5-4774-afa2-3ed83316a284
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -25,12 +25,12 @@ content:
     region: content
   field_images:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
 hidden:
   langcode: true

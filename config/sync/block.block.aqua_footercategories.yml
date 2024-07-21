@@ -1,0 +1,25 @@
+uuid: e45aba69-351f-4a10-8157-f7766e04584d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer-categories
+  module:
+    - system
+  theme:
+    - aqua
+id: aqua_footercategories
+theme: aqua
+region: footer
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer-categories'
+settings:
+  id: 'system_menu_block:footer-categories'
+  label: Catégories
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

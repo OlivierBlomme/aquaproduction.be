@@ -1,5 +1,5 @@
 uuid: f72cb467-7d2f-4e86-99a3-858b06d74946
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ id: contact_message.feedback.field_email
 field_name: field_email
 entity_type: contact_message
 bundle: feedback
-label: E-mailadres
+label: Courriel
 description: ''
 required: true
 translatable: false

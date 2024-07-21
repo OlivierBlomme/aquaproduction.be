@@ -1,5 +1,5 @@
 uuid: b299b225-8b7a-477a-8fe9-be9ce9fe5cf0
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -9,7 +9,7 @@ dependencies:
 id: verdesoft_emulsify_gebruikerslogin
 theme: verdesoft_emulsify
 region: header
-weight: 0
+weight: -1
 provider: null
 plugin: user_login_block
 settings:

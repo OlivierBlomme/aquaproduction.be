@@ -1,5 +1,5 @@
 uuid: 8f29b892-95c0-4b8f-af02-f0832a3f1484
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -8,8 +8,8 @@ dependencies:
     - aqua
 id: aqua_joluxsignatureblock
 theme: aqua
-region: footer
-weight: 0
+region: footer_bottom
+weight: -7
 provider: null
 plugin: jolux_signature_block
 settings:

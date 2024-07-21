@@ -1,0 +1,12 @@
+label: Honeypot
+tips:
+  honeypot-configuration:
+    label: Honeypot
+  protect-all-forms:
+    label: 'Alle formulieren beveiligen'
+  log-blocked-form-submissions:
+    label: 'Geblokkeerde formulierinzendingen loggen'
+  honeypot-time-limit:
+    label: 'Tijdslimiet honeypot'
+  honeypot-form-specific-settings:
+    label: 'Honeypot formulierspecifieke instellingen'

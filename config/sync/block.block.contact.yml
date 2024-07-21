@@ -1,0 +1,25 @@
+uuid: fe5502d0-b71c-4ef6-b454-4e6f472a941c
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b5ab449b-95b2-44bb-b916-b649d81f92f1'
+  module:
+    - block_content
+  theme:
+    - aqua
+id: contact
+theme: aqua
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:b5ab449b-95b2-44bb-b916-b649d81f92f1'
+settings:
+  id: 'block_content:b5ab449b-95b2-44bb-b916-b649d81f92f1'
+  label: Contact
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

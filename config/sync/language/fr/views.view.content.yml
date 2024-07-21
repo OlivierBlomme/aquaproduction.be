@@ -2,7 +2,7 @@ label: Contenu
 description: 'Trouver et gérer le contenu.'
 display:
   default:
-    display_title: 'Par défaut'
+    display_title: Master
     display_options:
       title: Contenu
       fields:
@@ -32,13 +32,13 @@ display:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       empty:
         area_text_custom:
-          content: 'Aucun contenu disponible.'
+          content: 'Geen inhoud beschikbaar.'
       filters:
         title:
           expose:

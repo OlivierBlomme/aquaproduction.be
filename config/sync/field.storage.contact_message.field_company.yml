@@ -1,5 +1,5 @@
 uuid: 3286ba84-8c5f-42aa-8bac-d25e9afcd4fb
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -12,8 +12,8 @@ entity_type: contact_message
 type: string
 settings:
   max_length: 255
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

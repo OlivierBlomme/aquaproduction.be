@@ -1,5 +1,5 @@
 uuid: 2f570e06-f32c-4152-8c04-278d0b6ccc85
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -27,6 +27,8 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
@@ -42,6 +44,4 @@ settings:
     title: ''
     width: null
     height: null
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: image

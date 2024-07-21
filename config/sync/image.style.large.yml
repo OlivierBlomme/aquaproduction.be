@@ -1,17 +1,17 @@
 uuid: 917a2efb-5406-4779-85b0-af9aea6dc2ea
-langcode: nl
+langcode: fr
 status: true
 dependencies: {  }
 _core:
   default_config_hash: J2n0RpFzS0-bgSyxjs6rSdgxB1rb-bTAgqywNx_964M
 name: large
-label: 'Groot (480×480)'
+label: 'Groot (560×560)'
 effects:
   ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
     uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
     id: image_scale
     weight: 0
     data:
-      width: 480
-      height: 480
+      width: 560
+      height: 560
       upscale: false

@@ -20,7 +20,7 @@ base_field: mid
 display:
   default:
     id: default
-    display_title: 'Par défaut'
+    display_title: Standaard
     display_plugin: default
     position: 0
     display_options:
@@ -76,7 +76,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: Actie
           include_exclude: exclude
           selected_actions: {  }
         thumbnail__target_id:
@@ -334,7 +334,7 @@ display:
           entity_type: media
           entity_field: status
           plugin_id: field
-          label: État
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -379,8 +379,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: 'Non publié'
-            format_custom_true: Publié
+            format_custom_false: 'Niet gepubliceerd'
+            format_custom_true: Gepubliceerd
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -401,7 +401,7 @@ display:
           entity_type: media
           entity_field: changed
           plugin_id: field
-          label: 'Mis à jour'
+          label: Bijgewerkt
           exclude: false
           alter:
             alter_text: false
@@ -476,7 +476,7 @@ display:
           admin_label: ''
           entity_type: media
           plugin_id: entity_operations
-          label: Actions
+          label: Bewerkingen
           exclude: false
           alter:
             alter_text: false
@@ -527,29 +527,29 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Suivant ›'
-            previous: '‹ Précédent'
-            first: '« Premier'
-            last: 'Dernier »'
+            next: 'Volgende ›'
+            previous: '‹ Vorige'
+            first: '« Eerste'
+            last: 'Laatste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Éléments par page'
+            items_per_page_label: 'Items per pagina'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tout -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Décalage
+            offset_label: Offset
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: false
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
       access:
         type: perm
         options:
@@ -703,7 +703,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Statut de publication'
+            label: Publicatiestatus
             description: ''
             identifier: status
             optional: true
@@ -714,11 +714,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Publié
+                title: Gepubliceerd
                 operator: '='
                 value: '1'
               2:
-                title: 'Non publié'
+                title: 'Niet gepubliceerd'
                 operator: '='
                 value: '0'
         status_extra:
@@ -776,7 +776,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Langue
+            label: Taal
             description: ''
             use_operator: false
             operator: langcode_op

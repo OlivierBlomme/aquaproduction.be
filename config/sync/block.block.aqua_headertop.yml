@@ -1,0 +1,25 @@
+uuid: 1ffe4fe9-2c87-4cff-8973-580b8ff9de07
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.header-top
+  module:
+    - system
+  theme:
+    - aqua
+id: aqua_headertop
+theme: aqua
+region: header_top
+weight: -8
+provider: null
+plugin: 'system_menu_block:header-top'
+settings:
+  id: 'system_menu_block:header-top'
+  label: 'Header top'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

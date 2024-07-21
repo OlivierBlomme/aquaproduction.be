@@ -1,29 +1,17 @@
-uuid: dff75be0-4dfb-47c4-9b8a-18b1a00b078a
-langcode: nl
+uuid: 8f44b75f-fe06-4446-8af7-d7f528a0a9fc
+langcode: fr
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
     - taxonomy
-_core:
-  default_config_hash: 0IR4lKP9AHYZUmoSda6bjb6LBP1AUbU61GL7CJ0AvIQ
 id: taxonomy_term.field_image
 field_name: field_image
 entity_type: taxonomy_term
-type: image
+type: entity_reference
 settings:
-  uri_scheme: public
-  default_image:
-    uuid: null
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  target_type: file
-  display_field: false
-  display_default: false
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

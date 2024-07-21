@@ -1,5 +1,5 @@
 uuid: 2e298879-5090-403b-a58a-8bc41ddfadb1
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -28,8 +28,8 @@ content:
     weight: 2
     region: content
     settings:
-      size: 60
       placeholder: ''
+      size: 60
     third_party_settings: {  }
   field_name:
     type: string_textfield
@@ -50,10 +50,10 @@ content:
   message:
     type: string_textarea
     weight: 4
+    region: content
     settings:
       rows: 12
       placeholder: ''
-    region: content
     third_party_settings: {  }
 hidden:
   copy: true

@@ -1,5 +1,5 @@
 uuid: 8ac7601c-c6b2-4a03-bc19-d5c97d8f1db0
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -8,7 +8,6 @@ dependencies:
     - field.field.taxonomy_term.plantgroups.volume_discount_code_pro
     - taxonomy.vocabulary.plantgroups
   module:
-    - image
     - text
 _core:
   default_config_hash: O6xE03OQGAQyk78SrcLUQUE_-vEFtzZuTMMiDijJiKY
@@ -18,21 +17,20 @@ bundle: plantgroups
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 1
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: image
-    weight: 0
+    weight: 1
     region: content
+  field_image:
+    type: entity_reference_label
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      link: true
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

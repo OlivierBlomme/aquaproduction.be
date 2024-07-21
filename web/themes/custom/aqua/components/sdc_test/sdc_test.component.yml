@@ -1,0 +1,17 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: SDC Test
+status: stable
+props:
+  type: object
+  properties:
+    block__base_class:
+      type: string
+      title: Block base class
+      description: Add Block base class
+    block__modifiers:
+      type: array
+      title: Block modifier
+      description: Block modifier
+    attributes:
+      type: Drupal\Core\Template\Attribute
+

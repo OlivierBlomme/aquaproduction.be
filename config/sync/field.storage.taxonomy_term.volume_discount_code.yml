@@ -1,5 +1,5 @@
 uuid: 17b97d8d-2277-45fe-8e20-bb4a38f6dc4f
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -12,8 +12,8 @@ entity_type: taxonomy_term
 type: string
 settings:
   max_length: 10
-  is_ascii: false
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

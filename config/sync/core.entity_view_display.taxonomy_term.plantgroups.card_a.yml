@@ -1,0 +1,32 @@
+uuid: 2955b682-728f-4f07-92cf-7fc348abdde0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.card_a
+    - field.field.taxonomy_term.plantgroups.field_image
+    - field.field.taxonomy_term.plantgroups.volume_discount_code
+    - field.field.taxonomy_term.plantgroups.volume_discount_code_pro
+    - taxonomy.vocabulary.plantgroups
+_core:
+  default_config_hash: O6xE03OQGAQyk78SrcLUQUE_-vEFtzZuTMMiDijJiKY
+id: taxonomy_term.plantgroups.card_a
+targetEntityType: taxonomy_term
+bundle: plantgroups
+mode: card_a
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_a
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true
+  volume_discount_code: true
+  volume_discount_code_pro: true

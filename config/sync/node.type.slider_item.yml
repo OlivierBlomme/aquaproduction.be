@@ -1,5 +1,5 @@
 uuid: 2c2e9bcb-caf9-49eb-bbcf-c77daf4a17c5
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -11,9 +11,9 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: gGbHM14Dj7F14vPWT5kruBq8S-r2Mh8blZ_rQrIC4fE
-name: 'Slider item'
+name: 'Elément du diaporama'
 type: slider_item
-description: 'Voeg een slide toe aan de Slider op de homepagina'
+description: "Utilisez des <em>éléments de diaporama</em> pour ajouter des diapositives au diaporama de la page d'accueil."
 help: null
 new_revision: false
 preview_mode: 1

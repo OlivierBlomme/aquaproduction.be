@@ -1,5 +1,5 @@
 uuid: f0b8279d-e086-4179-939c-f7e8f3839378
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -9,7 +9,7 @@ dependencies:
 id: aqua_brandingvandewebsite
 theme: aqua
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,5 +1,5 @@
 uuid: 906216c8-a984-434e-995c-0c478f0fb1b0
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -41,7 +41,7 @@ content:
     type: entity_reference_entity_view
     label: above
     settings:
-      view_mode: default
+      view_mode: hero
       link: false
     third_party_settings: {  }
     weight: 3

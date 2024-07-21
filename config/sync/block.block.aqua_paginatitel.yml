@@ -1,7 +1,9 @@
 uuid: 3f9d4721-3362-4742-ba51-3ef9847f8195
-langcode: nl
+langcode: fr
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - aqua
 id: aqua_paginatitel
@@ -15,4 +17,8 @@ settings:
   label: Paginatitel
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

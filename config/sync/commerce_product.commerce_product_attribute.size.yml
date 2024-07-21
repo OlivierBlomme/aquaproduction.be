@@ -1,9 +1,7 @@
-uuid: fac22b87-60f8-4044-9a8e-a5e9a427e34c
-langcode: nl
+uuid: 815f5398-0f8f-42b9-a083-fe12385dc607
+langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: z9LRs0rYQV8WuMZJa11-VXPGYJlGO5-BWxs16MF-9fE
 id: size
 label: Potmaat
-elementType: commerce_product_rendered_attribute
+elementType: select

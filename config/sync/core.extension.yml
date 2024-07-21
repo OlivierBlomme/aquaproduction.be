@@ -25,6 +25,7 @@ module:
   config: 0
   config_translation: 0
   contact: 0
+  contact_block: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -46,10 +47,12 @@ module:
   image: 0
   inline_entity_form: 0
   language: 0
+  layout_discovery: 0
   link: 0
   locale: 0
   media: 0
   media_library: 0
+  media_parent_entity_link: 0
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
@@ -68,6 +71,7 @@ module:
   state_machine: 0
   system: 0
   taxonomy: 0
+  taxonomy_menu: 0
   text: 0
   token: 0
   toolbar: 0

@@ -1,0 +1,20 @@
+uuid: f0955d82-6d1d-4a87-9b82-3c023ecbf94c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - aqua
+id: language_switcher
+theme: aqua
+region: header_top
+weight: -9
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Sélecteur de langue'
+  label_display: '0'
+  provider: language
+visibility: {  }

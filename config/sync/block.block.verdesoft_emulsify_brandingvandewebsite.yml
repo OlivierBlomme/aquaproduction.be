@@ -1,5 +1,5 @@
 uuid: 15e647b4-24b7-4da0-8dc0-e085dc70170e
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -9,7 +9,7 @@ dependencies:
 id: verdesoft_emulsify_brandingvandewebsite
 theme: verdesoft_emulsify
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: system_branding_block
 settings:

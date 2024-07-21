@@ -1,5 +1,5 @@
 uuid: 00eeeef9-6ee4-46f4-8db4-421a8050c3ca
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   module:
@@ -10,9 +10,9 @@ third_party_settings:
     parent: ''
 _core:
   default_config_hash: M_yQv317J6jjZ3ti1yscvRckMfxAxbZITGlQQR7CM1s
-name: 'Veel gestelde vraag'
+name: 'Question fréquemment posée'
 type: faq
-description: null
+description: 'Utilisez les <em>questions fréquemment posées</em> pour ajouter des questions avec réponses à la page Questions fréquemment posées.'
 help: null
 new_revision: false
 preview_mode: 1

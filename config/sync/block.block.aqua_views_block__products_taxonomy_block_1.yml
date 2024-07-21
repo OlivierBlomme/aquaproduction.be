@@ -1,0 +1,29 @@
+uuid: 8f7ebbc4-8e89-4765-b3b7-beb039ec49eb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.products_taxonomy
+  module:
+    - system
+    - views
+  theme:
+    - aqua
+id: aqua_views_block__products_taxonomy_block_1
+theme: aqua
+region: content_bottom
+weight: -8
+provider: null
+plugin: 'views_block:products_taxonomy-block_1'
+settings:
+  id: 'views_block:products_taxonomy-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

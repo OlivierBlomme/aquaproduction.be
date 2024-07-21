@@ -1,5 +1,5 @@
 uuid: 3726f0b9-c869-4601-8593-6247d8d51f41
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ id: contact_message.feedback.field_name
 field_name: field_name
 entity_type: contact_message
 bundle: feedback
-label: Naam
+label: Nom
 description: ''
 required: true
 translatable: false

@@ -1,0 +1,11 @@
+uuid: b45ad375-92b3-4671-b4a3-8f185c35ce1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_alt
+label: 'Card Alt'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,58 @@
+{% set block__base_class = block__base_class|default('block') %}
+{% set block__modifiers = block__modifiers|default([]) %}
+
+<div {{  attributes.addClass(classes) }}
+  {{ bem( block__base_class,block__modifiers,block__blockname) }} {%  if block__bg_img is not empty  %}>style="background-image:url({{ block__bg_img }});"{%  endif %}>
+
+  <div {{ bem( 'wrapper',block__modifiers,block__base_class) }}>
+    {% if block__pre_heading is not empty %}
+
+      {% include "@atoms/text/headings/_heading.twig" with {
+        "heading__level": block__pre_heading__level|default(4),
+        "heading__modifiers":block__modifiers,
+        "heading": block__pre_heading,
+        "heading__base_class": 'pre_title',
+        "heading__blockname": 'block',
+
+      } %}
+
+    {% endif %}
+
+    {% if block__heading is not empty %}
+
+
+
+      {% include "@atoms/text/headings/_heading.twig" with {
+        "heading__level": block__heading__level|default(3),
+        "heading__modifiers":block__modifiers,
+        "heading": block__heading,
+        "heading__base_class": 'title',
+        "heading__blockname": 'block',
+
+      } %}
+
+    {% endif %}
+    <div {{ bem( 'content',block__modifiers,block__base_class) }}>
+      {% block content %}
+
+        {% if block('images')|trim is not empty %}
+          <div {{ bem( 'images',block__modifiers,block__base_class) }}>
+            {% block images %}
+
+
+            {% endblock %}
+          </div>
+        {% endif %}
+
+
+        <div {{ bem( 'body',block__modifiers,block__base_class) }}>
+          {% block body %}
+
+          {% endblock %}
+        </div>
+      {% endblock %}
+    </div>
+
+  </div>
+</div>
+

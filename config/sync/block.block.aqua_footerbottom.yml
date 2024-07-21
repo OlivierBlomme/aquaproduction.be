@@ -1,0 +1,25 @@
+uuid: 94e774fa-b882-4b0d-b725-66689a9ed9e6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer-bottom
+  module:
+    - system
+  theme:
+    - aqua
+id: aqua_footerbottom
+theme: aqua
+region: footer_bottom
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer-bottom'
+settings:
+  id: 'system_menu_block:footer-bottom'
+  label: 'Footer bottom'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

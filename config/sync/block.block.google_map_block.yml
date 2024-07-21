@@ -1,0 +1,29 @@
+uuid: c9cb39a0-36f6-4e2f-b0ab-1468971dbcae
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+    - verdesoft
+  theme:
+    - aqua
+id: google_map_block
+theme: aqua
+region: content_bottom
+weight: -6
+provider: null
+plugin: google_map_block
+settings:
+  id: google_map_block
+  label: 'Google Map block'
+  label_display: '0'
+  provider: verdesoft
+  google_map_lat: '50.6990400658087'
+  google_map_lng: '4.551802084120743'
+  google_map_zoom: '8'
+  google_map_icon: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact/feedback

@@ -1,5 +1,5 @@
 uuid: 3088988c-cfa0-49e4-96a7-cb45a41cef78
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ id: contact_message.feedback.field_phone
 field_name: field_phone
 entity_type: contact_message
 bundle: feedback
-label: 'Telefoon / GSM'
+label: 'Téléphone / GSM'
 description: ''
 required: true
 translatable: false

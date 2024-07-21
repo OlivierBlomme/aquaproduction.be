@@ -8,6 +8,7 @@ dependencies:
     - media.type.image
   module:
     - image
+    - media_parent_entity_link
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -17,11 +18,13 @@ content:
     type: image
     label: visually_hidden
     settings:
-      image_link: ''
+      image_link: file
       image_style: large
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      media_parent_entity_link:
+        link_to_parent: '0'
     weight: 0
     region: content
 hidden:

@@ -1,3 +1,4 @@
+uuid: c3686b12-2190-4ee2-8302-125ff5b66213
 langcode: fr
 status: true
 dependencies:
@@ -15,7 +16,7 @@ mode: hero
 content:
   field_media_image:
     type: image
-    label: hidden
+    label: visually_hidden
     settings:
       image_link: ''
       image_style: hero

@@ -1,6 +1,6 @@
 _core:
   default_config_hash: 6CZIzFifRq3qbdq3n3nDpEOO4hWIQtKOAQNPvGNGKeM
-langcode: nl
+langcode: fr
 cancel_confirm:
   subject: 'Verzoek om account op te heffen van [user:display-name] op [site:name]'
   body: "[user:display-name]\r\n\r\nOp [site:name] is een verzoek ingediend om uw account op te heffen.\r\n\r\nU kunt dit verzoek op [site:url-brief] bevestigen door op de volgende link te klikken, of deze in uw browser te plakken:\r\n\r\n[user:cancel-url]\r\n\r\nOPMERKING: Het opheffen van een account is onherroepelijk.\r\n\r\nDeze link vervalt na één dag, en er gebeurt niets als hij niet gebruikt wordt.\r\n\r\n--  [site:name] team"

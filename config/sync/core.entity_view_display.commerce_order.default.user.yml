@@ -1,5 +1,5 @@
 uuid: 756b0114-12a7-4f48-bae9-07a8a4d18f99
-langcode: nl
+langcode: fr
 status: true
 dependencies:
   config:
@@ -53,6 +53,14 @@ content:
         refresh: 60
     third_party_settings: {  }
     weight: 2
+    region: content
+  coupons:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
     region: content
   mail:
     type: basic_string
@@ -112,6 +120,7 @@ content:
 hidden:
   changed: true
   ip_address: true
+  search_api_excerpt: true
   store_id: true
   total_paid: true
   uid: true
