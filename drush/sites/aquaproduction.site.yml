@@ -1,0 +1,30 @@
+dev:
+  host: aquaproduction.docker.localhost
+  options: {  }
+  paths:
+    drush-script: /var/www/aquaproduction.be/vendor/drush/drush/drush
+  root: /var/www/aquaproduction.be/web
+  ssh:
+    #options: '-o "SendEnv PHP_IDE_CONFIG PHP_OPTIONS XDEBUG_CONFIG" -o PasswordAuthentication=no -i '. drush_server_home() .'"/.vagrant.d/insecure_private_key"'
+    #options: '-o "SendEnv PHP_IDE_CONFIG PHP_OPTIONS XDEBUG_CONFIG" -o PasswordAuthentication=no -i "' . (getenv('VAGRANT_HOME') ?: drush_server_home() . '/.vagrant.d') . '/insecure_private_key"',
+  uri: aquaproduction.docker.localhost:8000
+  #user: root
+  #extra-options: docker-compose exec --user=82 php
+  #type: container
+  #extra-options: '-o PasswordAuthentication=no -i ~/.vagrant.d/insecure_private_key'
+stage:
+  host: staging.aquaproduction.be
+  paths:
+    drush-script: /var/www/aquaproduction.be/drupal/vendor/drush/drush/drush
+    files: sites/default/files
+  root: /var/www/aquaproduction.be/drupal/web
+  uri: 'staging.aquaproduction.be'
+  user: olivier
+prod:
+  host: aquaproduction.be
+  paths:
+    drush-script: /var/www/aquaproduction.be/drupal/vendor/drush/drush/drush
+    files: sites/default/files
+  root: /var/www/aquaproduction.be/drupal/web
+  uri: 'aquaproduction.be'
+  user: olivier
