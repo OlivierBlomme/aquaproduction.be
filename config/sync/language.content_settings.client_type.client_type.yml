@@ -1,0 +1,11 @@
+uuid: 5f28499a-b499-4f57-ab5d-c93d901cc7d1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - verdesoft_pricing
+id: client_type.client_type
+target_entity_type_id: client_type
+target_bundle: client_type
+default_langcode: site_default
+language_alterable: false

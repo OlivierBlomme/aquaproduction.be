@@ -1,0 +1,18 @@
+uuid: 77dc8d0e-e976-4663-8c58-a74ecdf7926d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_promotion
+id: commerce_promotion.commerce_promotion.display_name
+field_name: display_name
+entity_type: commerce_promotion
+bundle: commerce_promotion
+label: "Nom de l'affichage"
+description: 'If provided, shown on the order instead of "Remise".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: e65b9060-a099-4606-8c34-df4a57f838b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+id: commerce_product.verdesoft_46
+field_name: verdesoft_46
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

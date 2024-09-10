@@ -11,16 +11,16 @@ dependencies:
     - aqua
 id: aqua_views_block__products_taxonomy_block_1
 theme: aqua
-region: content_bottom
-weight: -8
+region: content_top
+weight: -11
 provider: null
 plugin: 'views_block:products_taxonomy-block_1'
 settings:
   id: 'views_block:products_taxonomy-block_1'
-  label: ''
+  label: 'Plantes Aquatiques et Semi-Tropicales'
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'Plantes Aquatiques et Semi-Tropicales'
   items_per_page: none
 visibility:
   request_path:

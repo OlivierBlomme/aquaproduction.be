@@ -1,6 +1,6 @@
 uuid: d6c5e4d6-a07a-4cf9-9eec-2d58f02d96ce
 langcode: fr
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:b5ab449b-95b2-44bb-b916-b649d81f92f1'
@@ -12,7 +12,7 @@ dependencies:
 id: aqua_contact
 theme: aqua
 region: sidebar
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:b5ab449b-95b2-44bb-b916-b649d81f92f1'
 settings:

@@ -1,0 +1,22 @@
+uuid: 10bc3094-3eb9-432f-be20-3f88e58690b3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slider_item
+id: node.slider_item.status
+field_name: status
+entity_type: node
+bundle: slider_item
+label: Gepubliceerd
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

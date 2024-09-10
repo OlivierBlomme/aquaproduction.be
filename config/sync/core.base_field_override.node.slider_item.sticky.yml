@@ -1,0 +1,22 @@
+uuid: bde04b97-42a2-4b9c-8d17-c4812eef2c04
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slider_item
+id: node.slider_item.sticky
+field_name: sticky
+entity_type: node
+bundle: slider_item
+label: 'Epinglé en haut des listes'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

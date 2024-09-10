@@ -1,0 +1,22 @@
+uuid: 8a590ada-541a-442e-aa14-1c2648327767
+langcode: fr
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - aqua
+id: aqua_winkelwagen
+theme: aqua
+region: user_utilities
+weight: -11
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Winkelwagen
+  label_display: '0'
+  provider: commerce_cart
+  dropdown: true
+  show_if_empty: true
+visibility: {  }

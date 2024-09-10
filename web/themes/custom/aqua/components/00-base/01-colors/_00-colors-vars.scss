@@ -1,6 +1,6 @@
 $white: white;
 $near-white: #fffcff;
-$gray-lightest: #F8F4F3;   
+$gray-lightest: #F8F4F3;
 $gray-lighter: #e6e6ea;
 $gray-light: #ccc;
 $gray: #7d7d7d;
@@ -10,15 +10,13 @@ $black: #223843;
 
 //Theme
 
-
-//$primary: #deb32e;
-//$secondary: #81171b;
-
-
-
-$primary: #1e7c5e;
-$secondary: #39c3e8;
-$accent:#ef9543;
+$orange: #F1A660;
+$green: #1C7356;
+$blue: #97D3D9;
+$blue-light: #E6F3F4;
 
 
 
+$primary: $orange;
+$secondary: $blue;
+$accent: $orange;

@@ -21,11 +21,11 @@ module:
   commerce_promotion: 0
   commerce_store: 0
   commerce_tax: 0
+  commerce_variation_cart_form: 0
   components: 0
   config: 0
   config_translation: 0
   contact: 0
-  contact_block: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -37,13 +37,13 @@ module:
   entity_reference_revisions: 0
   facets: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
   google_analytics: 0
   help: 0
   history: 0
-  honeypot: 0
   image: 0
   inline_entity_form: 0
   language: 0

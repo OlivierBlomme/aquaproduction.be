@@ -70,31 +70,32 @@
  *   in different view modes.
  */
 #}
-{%
-    set classes = [
-    'node',
-    'node--' ~ node.id,
-    'node--type-' ~ node.bundle|clean_class,
-]
-%}
+{% set classes = [
+  'node',
+  'node--' ~ node.id,
+  'node--type-' ~ node.bundle|clean_class,
+] %}
 
 <div{{ attributes.addClass(classes) }}>
 
   <div{{ content_attributes.addClass('node__content') }}>
-      {{ content.field_images }}
-      <div class="node__body">
-        {% include "@atoms/text/headings/_heading.twig" with {
-          "heading__level": 4,
-          "heading__modifiers": ['front-page'],
-          "heading": pre_title,
-          "heading__base_class": 'pre_title',
-          "heading__blockname": 'node',
+    {{ content.field_images }}
+    <div class="node__body">
 
-        } %}
       {% include "@atoms/text/headings/_heading.twig" with {
-          "heading__level": 2,
-          "heading__modifiers": ['front-page'],
-          "heading": label,
+        "heading__level": 4,
+        "heading__modifiers": ['front-page'],
+        "heading": pre_title,
+        "heading__base_class": 'pre_title',
+        "heading__blockname": 'node',
+
+      } %}
+
+
+      {% include "@atoms/text/headings/_heading.twig" with {
+        "heading__level": 2,
+        "heading__modifiers": ['front-page'],
+        "heading": label.0,
         "heading__base_class": 'title',
         "heading__blockname": 'node',
 
@@ -102,7 +103,7 @@
 
       {{ content.body.0 }}
 
-  </div>
+    </div>
 
   </div>
 

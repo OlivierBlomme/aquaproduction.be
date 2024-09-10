@@ -5,8 +5,6 @@ dependencies:
   enforced:
     module:
       - verdesoft
-_core:
-  default_config_hash: sUPMRq0-VmShnH44ZoSgC2peSNlbAue75tPh97xuYTg
 id: product_properties_terms_default
 class: null
 field_plugin_method: null
@@ -35,16 +33,11 @@ process:
   name:
     -
       plugin: get
-      source: name_nl
-      language: nl
+      source: name
   uid:
     -
       plugin: default_value
       default_value: 1
-  langcode:
-    -
-      plugin: default_value
-      default_value: nl
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:

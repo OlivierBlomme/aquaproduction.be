@@ -9,13 +9,13 @@ dependencies:
     - aqua
 id: google_map_block
 theme: aqua
-region: content_bottom
-weight: -6
+region: sidebar
+weight: -9
 provider: null
 plugin: google_map_block
 settings:
   id: google_map_block
-  label: 'Google Map block'
+  label: 'Google Map'
   label_display: '0'
   provider: verdesoft
   google_map_lat: '50.6990400658087'

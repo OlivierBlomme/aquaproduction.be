@@ -1,0 +1,20 @@
+uuid: 52be91cd-323c-494f-b965-583764f4d5e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+id: commerce_store.online.uid
+field_name: uid
+entity_type: commerce_store
+bundle: online
+label: Propriétaire
+description: 'Le propriétaire de la boutique.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_store\Entity\Store::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

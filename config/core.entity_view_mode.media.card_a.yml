@@ -1,8 +1,0 @@
-status: true
-dependencies:
-  module:
-    - media
-id: media.card_a
-label: 'Card Link'
-targetEntityType: media
-cache: true

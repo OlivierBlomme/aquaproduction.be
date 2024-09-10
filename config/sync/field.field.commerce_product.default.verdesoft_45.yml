@@ -1,0 +1,29 @@
+uuid: ba9f76cb-5e06-4a5b-85a6-cc8287771b97
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.verdesoft_45
+    - taxonomy.vocabulary.verdesoft_45
+id: commerce_product.default.verdesoft_45
+field_name: verdesoft_45
+entity_type: commerce_product
+bundle: default
+label: "\tQuantité/m2"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      verdesoft_45: verdesoft_45
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

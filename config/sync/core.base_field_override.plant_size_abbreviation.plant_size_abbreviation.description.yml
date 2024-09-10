@@ -1,0 +1,18 @@
+uuid: 3e622f82-7b90-4d2a-bf5f-7710684a585b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - verdesoft
+id: plant_size_abbreviation.plant_size_abbreviation.description
+field_name: description
+entity_type: plant_size_abbreviation
+bundle: plant_size_abbreviation
+label: Description
+description: 'The description of the Plant Size Abbreviation.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

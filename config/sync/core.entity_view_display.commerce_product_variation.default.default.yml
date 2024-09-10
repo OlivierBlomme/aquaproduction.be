@@ -18,7 +18,12 @@ dependencies:
     - field.field.commerce_product_variation.default.volume_discount_code
     - field.field.commerce_product_variation.default.volume_discount_code_pro
   module:
+    - commerce_order
+    - commerce_variation_cart_form
     - verdesoft_pricing
+third_party_settings:
+  commerce_variation_cart_form:
+    combine: false
 _core:
   default_config_hash: At3egc5evjtlnv9rjsLPlHj91FF9AMJzTDG7co8440g
 id: commerce_product_variation.default.default
@@ -26,15 +31,45 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
-  offer:
-    type: boolean
+  attribute_size:
+    type: entity_reference_label
     label: hidden
     settings:
-      format: boolean
-      format_custom_false: ''
-      format_custom_true: ''
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  commerce_variation_cart_form:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  price:
+    type: commerce_price_calculated
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+      adjustment_types: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  stock:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
     weight: 2
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
   volume_discount_prices:
     type: product_variation_calculated_prices
@@ -44,15 +79,14 @@ content:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
-    weight: 0
+    weight: 4
     region: content
     default_formatter: product_variation_calculated_prices
 hidden:
-  attribute_size: true
   field_category: true
   langcode: true
   list_price: true
-  price: true
+  offer: true
   price2: true
   price3: true
   price4: true
@@ -63,7 +97,5 @@ hidden:
   product_id: true
   search_api_excerpt: true
   sku: true
-  stock: true
-  title: true
   volume_discount_code: true
   volume_discount_code_pro: true

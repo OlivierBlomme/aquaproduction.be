@@ -1,0 +1,18 @@
+uuid: 64017c96-8c02-467b-ae17-a8ee669061e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.verdesoft_32
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.verdesoft_32
+target_entity_type_id: taxonomy_term
+target_bundle: verdesoft_32
+default_langcode: site_default
+language_alterable: true

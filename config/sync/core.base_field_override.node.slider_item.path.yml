@@ -1,0 +1,20 @@
+uuid: 0106c2a7-1248-4cb3-8337-9d231604c82d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slider_item
+  module:
+    - path
+id: node.slider_item.path
+field_name: path
+entity_type: node
+bundle: slider_item
+label: "Alias d'URL"
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

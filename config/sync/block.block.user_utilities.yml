@@ -8,8 +8,8 @@ dependencies:
     - aqua
 id: user_utilities
 theme: aqua
-region: header
-weight: -4
+region: header_top
+weight: -10
 provider: null
 plugin: placeholder_block
 settings:

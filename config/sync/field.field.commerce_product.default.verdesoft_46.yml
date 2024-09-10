@@ -1,0 +1,29 @@
+uuid: b7ea30c6-2ddb-444d-8a86-b7124c2274a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.verdesoft_46
+    - taxonomy.vocabulary.verdesoft_46
+id: commerce_product.default.verdesoft_46
+field_name: verdesoft_46
+entity_type: commerce_product
+bundle: default
+label: Couleur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      verdesoft_46: verdesoft_46
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

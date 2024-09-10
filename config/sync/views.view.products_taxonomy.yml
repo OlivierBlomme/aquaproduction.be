@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: GGdA2NlSPDLUhIqKq2GrK9ptmJtZuFxbICvyIMOLZ0U
 id: products_taxonomy
-label: 'Products - Taxonomy'
+label: Assortiment
 module: views
 description: ''
 tag: ''
@@ -149,6 +149,48 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        langcode:
+          id: langcode
+          table: taxonomy_term_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
         options:
@@ -223,21 +265,8 @@ display:
         row: false
         sorts: false
         header: false
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<p>Vind bloeiende tuin- en terrasplanten, kamerplanten en geschenkartikelen.</p>'
-            format: full_html
-          tokenize: false
-      rendering_language: '***LANGUAGE_entity_translation***'
+      header: {  }
+      rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
     cache_metadata:
       max-age: -1

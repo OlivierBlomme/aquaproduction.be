@@ -13,7 +13,7 @@ id: node.slider_item.body
 field_name: body
 entity_type: node
 bundle: slider_item
-label: Body
+label: Corps
 description: ''
 required: false
 translatable: true

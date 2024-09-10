@@ -109,7 +109,7 @@ display:
           exposed: false
           expose:
             operator_id: search_api_language_op
-            label: 'Item language'
+            label: "Langue de l'élément"
             description: null
             use_operator: false
             operator: search_api_language_op
@@ -168,7 +168,7 @@ display:
         - 'search_api_list:products'
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Pagina
     display_plugin: page
     position: 1
     display_options:
@@ -210,7 +210,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: true
           title: '{{ arguments.field_category }} '
           default_argument_type: taxonomy_tid
@@ -550,7 +550,7 @@ display:
           exposed: false
           expose:
             operator_id: search_api_language_op
-            label: 'Item language'
+            label: "Langue de l'élément"
             description: null
             use_operator: false
             operator: search_api_language_op

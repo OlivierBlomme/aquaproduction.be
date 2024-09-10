@@ -1,0 +1,9 @@
+uuid: 4b232478-9b34-402d-b75c-96f2b5da4161
+langcode: fr
+status: true
+dependencies: {  }
+name: Exposition
+vid: verdesoft_27
+description: null
+weight: 0
+new_revision: false

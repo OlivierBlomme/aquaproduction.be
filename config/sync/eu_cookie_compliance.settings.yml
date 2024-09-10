@@ -16,17 +16,17 @@ mobile_popup_info:
   value: ''
   format: restricted_html
 popup_info_template: new
-popup_agree_button_message: Accept
-popup_more_info_button_message: 'More info'
+popup_agree_button_message: Accepter
+popup_more_info_button_message: 'En savoir plus'
 mobile_breakpoint: 768
 popup_agreed_enabled: false
 popup_hide_agreed: false
-disagree_button_label: 'No, thanks'
+disagree_button_label: 'Non, merci.'
 popup_agreed:
-  value: '<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>'
+  value: "<h2>Merci d'avoir accepté les cookies</h2><p>Vous pouvez désormais masquer ce message ou en apprendre plus à propos des cookies.</p>"
   format: plain_text
-popup_find_more_button_message: 'More info'
-popup_hide_button_message: Hide
+popup_find_more_button_message: 'En savoir plus'
+popup_hide_button_message: Masquer
 popup_link: '<front>'
 popup_link_new_window: false
 popup_height: null
@@ -61,12 +61,12 @@ consent_storage_method: do_not_store
 withdraw_message:
   value: '<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>'
   format: plain_text
-withdraw_tab_button_label: 'Privacy settings'
-withdraw_action_button_label: 'Withdraw consent'
+withdraw_tab_button_label: 'Paramètres de confidentialité'
+withdraw_action_button_label: 'Retirer le consentement'
 withdraw_enabled: false
 withdraw_button_on_info_popup: false
-save_preferences_button_label: 'Save preferences'
-accept_all_categories_button_label: 'Accept all cookies'
+save_preferences_button_label: 'Enregistrer les préférences'
+accept_all_categories_button_label: 'Accepter tous les cookies'
 enable_save_preferences_button: true
 domain_all_sites: false
 settings_tab_enabled: false

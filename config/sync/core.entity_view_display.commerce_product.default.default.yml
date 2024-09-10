@@ -9,9 +9,44 @@ dependencies:
     - field.field.commerce_product.default.field_images
     - field.field.commerce_product.default.field_name
     - field.field.commerce_product.default.vat_type
+    - field.field.commerce_product.default.verdesoft_27
+    - field.field.commerce_product.default.verdesoft_29
+    - field.field.commerce_product.default.verdesoft_32
+    - field.field.commerce_product.default.verdesoft_36
+    - field.field.commerce_product.default.verdesoft_45
+    - field.field.commerce_product.default.verdesoft_46
+    - image.style.large
   module:
-    - commerce_product
+    - field_group
+    - image
     - text
+third_party_settings:
+  field_group:
+    group_properties:
+      children:
+        - verdesoft_29
+        - verdesoft_46
+        - verdesoft_45
+        - verdesoft_27
+        - verdesoft_36
+        - verdesoft_32
+      label: Propriétés
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: properties
+        show_empty_fields: false
+        id: properties
+        label_as_html: false
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 _core:
   default_config_hash: 10qgl6V_HwkrJufzsNCV75OpqOeMzzKDJb3BhaogmzQ
 id: commerce_product.default.default
@@ -24,7 +59,26 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
+  field_images:
+    type: image
+    label: hidden
+    settings:
+      image_link: file
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
     weight: 0
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
     region: content
   title:
     type: string
@@ -32,23 +86,68 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
+    weight: 1
     region: content
   variations:
-    type: commerce_add_to_cart
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      show_quantity: false
-      default_quantity: '1'
-      combine: true
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  verdesoft_27:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  verdesoft_29:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  verdesoft_32:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  verdesoft_36:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  verdesoft_45:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  verdesoft_46:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
   created: true
   field_category: true
-  field_images: true
-  field_name: true
   langcode: true
   search_api_excerpt: true
   stores: true

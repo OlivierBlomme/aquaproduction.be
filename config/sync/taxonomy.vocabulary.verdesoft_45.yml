@@ -1,0 +1,9 @@
+uuid: f4e9b034-4018-4d17-959f-85a2547ca4dd
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Quantité / m2'
+vid: verdesoft_45
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,20 @@
+uuid: 8f8bab75-1f8b-4623-a463-3e2fc4199799
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slider_item
+id: node.slider_item.uid
+field_name: uid
+entity_type: node
+bundle: slider_item
+label: 'Écrit par'
+description: "Le nom d'utilisateur de l'auteur du contenu."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

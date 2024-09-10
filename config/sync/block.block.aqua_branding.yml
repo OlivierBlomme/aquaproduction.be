@@ -1,0 +1,23 @@
+uuid: aec33096-ca26-486f-b0c5-86339caf81e6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aqua
+id: aqua_branding
+theme: aqua
+region: header
+weight: -11
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Identité du site'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

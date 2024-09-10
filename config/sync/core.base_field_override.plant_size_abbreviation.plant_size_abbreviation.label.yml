@@ -1,0 +1,18 @@
+uuid: d450503f-fc1b-4141-b288-7442c9c31b81
+langcode: fr
+status: true
+dependencies:
+  module:
+    - verdesoft
+id: plant_size_abbreviation.plant_size_abbreviation.label
+field_name: label
+entity_type: plant_size_abbreviation
+bundle: plant_size_abbreviation
+label: Label
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

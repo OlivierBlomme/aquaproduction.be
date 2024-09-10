@@ -1,0 +1,18 @@
+uuid: e159d33d-2011-4448-8b4d-8a2bbdff8446
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slider_item
+id: node.slider_item.created
+field_name: created
+entity_type: node
+bundle: slider_item
+label: 'Écrit le'
+description: "La date et l'heure auxquelles le contenu a été créé."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,34 +1,32 @@
 // Color Usage variables - use these (via the `clr` function below)
 // rather than color variables directly.
 $defaultColors: (
-  text: $black,
+  text: $green,
+  heading-text: $green,
+  heading-link: $green,
 
-
-  h1-text: clr(text),
-  h2-text: clr(text),
-  h3-text: clr(text),
-  h4-text: clr(text),
-  h5-text: clr(text),
+  bg-alt:$blue-light,
+  border-textfield: $green,
   link: $primary,
   link-hover: $primary,
-  hellobar-bg: $primary,
-  hellobar-link: $white,
+  //header-bg: yellow,
+  //header-text: green,
+  //header-link: inherit,
+  //header-link-hover: inherit,
+  header-top-bg: $secondary,
+  header-top-text: $green,
 
-
-  main-menu-link: $black,
+  main-menu-link: $green,
   //main-menu-link-hover: currentColor,
 
+  button-text: clr(text),
 
+  //button-primary-text: clr(text-inverse),
 
-  button-ghost-bg-hover: clr(primary),
-  button-ghost-text: clr(primary),
-  button-ghost-text-hover: clr(text-inverse),
-  button-ghost-border: clr(primary),
-
-  footer-bg: $black,
-  footer-text: clr(text-inverse),
- // footer-link: inherit,
- // footer-link-hover: inherit,
+  footer-bg: $secondary,
+  footer-text: $green,
+  // footer-link: inherit,
+  // footer-link-hover: inherit,,
 );
 
 ///////////
@@ -79,7 +77,7 @@ $defaultColors: (
   // Use the default color scheme for the "Default Theme" section of the
   // component library regardless of OS setting.
   // This is required to show the correct colors in the component library at all times
-  [data-theme="default"] {
+  [data-theme='default'] {
     @each $name, $color in $defaultColors {
       --c-#{$name}: #{$color};
     }

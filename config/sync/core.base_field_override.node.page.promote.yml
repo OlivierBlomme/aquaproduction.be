@@ -10,15 +10,15 @@ id: node.page.promote
 field_name: promote
 entity_type: node
 bundle: page
-label: 'Aangeraden op de voorpagina'
+label: "Promu en page d'accueil"
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0
 default_value_callback: ''
 settings:
-  on_label: Aan
-  off_label: Uit
+  on_label: Activé
+  off_label: Désactivé
 field_type: boolean

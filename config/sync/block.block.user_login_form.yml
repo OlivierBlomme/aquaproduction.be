@@ -9,7 +9,7 @@ dependencies:
 id: user_login_form
 theme: aqua
 region: user_utilities
-weight: 0
+weight: -12
 provider: null
 plugin: user_login_block
 settings:

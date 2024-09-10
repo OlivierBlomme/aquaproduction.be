@@ -1,0 +1,25 @@
+uuid: 8ab6afc1-bc91-41f2-9e56-93633186eb23
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - system
+  theme:
+    - aqua
+id: aqua_social
+theme: aqua
+region: header_top
+weight: -11
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: Social
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

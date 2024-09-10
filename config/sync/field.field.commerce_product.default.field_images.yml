@@ -6,14 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.storage.commerce_product.field_images
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 _core:
   default_config_hash: blWZYtJ5nap9rLoP5NUlTdPOoZL8wz6Eb8OPy1YiD6k
 id: commerce_product.default.field_images
@@ -23,7 +16,7 @@ bundle: default
 label: Afbeeldingen
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

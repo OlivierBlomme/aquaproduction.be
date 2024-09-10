@@ -1,0 +1,17 @@
+uuid: e7c83e9b-c78d-4cd1-81bd-0a24a702833f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - content_translation
+    - verdesoft
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: plant_size_abbreviation.plant_size_abbreviation
+target_entity_type_id: plant_size_abbreviation
+target_bundle: plant_size_abbreviation
+default_langcode: site_default
+language_alterable: false

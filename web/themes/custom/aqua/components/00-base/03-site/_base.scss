@@ -1,11 +1,1 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
-.node__body {
-  .main--front-page & {
-    text-align: center;
-
-    @include large {
-      max-width: 65%;
-      margin: 0 auto;
-    }
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');

@@ -1,0 +1,29 @@
+uuid: 85d44163-7a7f-4b43-9f89-1f9e55842548
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.verdesoft_32_all
+  module:
+    - facets
+    - system
+  theme:
+    - aqua
+id: verdesoft_32_all
+theme: aqua
+region: sidebar
+weight: -12
+provider: null
+plugin: 'facet_block:verdesoft_32_all'
+settings:
+  id: 'facet_block:verdesoft_32_all'
+  label: Floraison
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: verdesoft_32_all
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/all

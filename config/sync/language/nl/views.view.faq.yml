@@ -1,0 +1,17 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      fields:
+        title:
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+      exposed_form:
+        options:
+          reset_button_label: Reset
+  page_1:
+    display_title: Pagina

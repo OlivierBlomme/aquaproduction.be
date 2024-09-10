@@ -2,21 +2,21 @@
   &--hero {
     @include large {
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
   }
 }
 
 .carousel_item__content__inner {
   &--hero {
-    background: rgba($gray-lightest, 0.8);
-    // background: clr(highlight-high);
+    background: clr(bg-alt);
     color: clr(text);
-    border-radius: $border-radius 0;
+    border-radius: $border-radius;
     padding: $space;
+    text-align: center;
 
     @include large {
-      padding: $space-triple;
+      padding: $space-quadruple;
       width: 40%;
       width: 34rem;
     }
@@ -25,16 +25,21 @@
 
 .carousel_item__title {
   &--hero {
-    color: clr(primary);
+
     @include large {
-      font-size: $h2-font-size;
+      font-size: $h1-font-size;
     }
   }
 }
 
 .carousel_item__body__wrapper {
   font-size: $font-size;
-  > p:first-child {
+
+  >p:first-child {
     margin: 0;
   }
+}
+
+.carousel_item__button__wrapper {
+  justify-content: center;
 }

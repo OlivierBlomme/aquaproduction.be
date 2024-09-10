@@ -2,8 +2,6 @@ uuid: d47f5d3d-98d1-4b1a-890a-69d8e90ef476
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: zwIAGkE0ZWwaMdW0a7EDXRnvvmWv3_3HL9bnq8FlKqE
 id: plantgroups_sub_terms_default
 class: null
 field_plugin_method: null
@@ -36,15 +34,11 @@ process:
   name:
     -
       plugin: get
-      source: name_nl
+      source: name
   uid:
     -
       plugin: default_value
       default_value: 1
-  langcode:
-    -
-      plugin: default_value
-      default_value: nl
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:

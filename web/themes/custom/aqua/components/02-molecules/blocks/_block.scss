@@ -1,33 +1,8 @@
-.block {
-  &--block-aqua-views-block-products-taxonomy-block-1,
-  &--block-aqua-views-block-slider-block-1 {
-    background: clr(highlight-high);
-  }
-}
-
 .block__wrapper {
   &--block-aqua-views-block-slider-block-1 {
+    padding: 0 $wrapper-h-padding-mobile;
     @include medium {
-      padding: $space-double $space-double 0 $space-double;
-    }
-  }
-  &--block-aqua-features {
-    padding-top: 0 !important;
-  }
-
-  &--block-aqua-views-block-products-taxonomy-block-1 {
-    max-width: 100%;
-    padding-left: $space;
-    padding-right: $space;
-  }
-}
-
-.block__body {
-  &--block-aqua-features {
-    text-align: center;
-    > p {
-      max-width: 60rem;
-      margin: 0 auto;
+      padding: 0 $wrapper-h-padding;
     }
   }
 }

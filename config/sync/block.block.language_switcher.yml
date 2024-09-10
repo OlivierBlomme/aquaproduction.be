@@ -9,7 +9,7 @@ dependencies:
 id: language_switcher
 theme: aqua
 region: header_top
-weight: -9
+weight: -12
 provider: null
 plugin: 'language_block:language_interface'
 settings:

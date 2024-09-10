@@ -1,0 +1,22 @@
+uuid: 99bd8ec4-26d8-4660-92c1-73b5e5792be9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slider_item
+id: node.slider_item.promote
+field_name: promote
+entity_type: node
+bundle: slider_item
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

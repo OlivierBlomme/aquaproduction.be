@@ -1,0 +1,11 @@
+uuid: bf0b9508-7352-4e2c-993a-f289168c1068
+langcode: fr
+status: true
+dependencies:
+  module:
+    - verdesoft_pricing
+id: volume_discount.volume_discount
+target_entity_type_id: volume_discount
+target_bundle: volume_discount
+default_langcode: site_default
+language_alterable: false

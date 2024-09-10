@@ -4,7 +4,8 @@
     height: 350px;
 
     @include medium {
-      height: 550px;
+      height: auto;
+      border-radius:$border-radius;
     }
   }
 }

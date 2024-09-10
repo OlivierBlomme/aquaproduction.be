@@ -1,0 +1,22 @@
+uuid: dd5d779b-ed98-453d-9cce-7ba1ac56fbae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.status
+field_name: status
+entity_type: node
+bundle: faq
+label: Gepubliceerd
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 760ac2b1-d427-43c7-a2eb-334236fee194
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.created
+field_name: created
+entity_type: node
+bundle: faq
+label: 'Écrit le'
+description: "La date et l'heure auxquelles le contenu a été créé."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

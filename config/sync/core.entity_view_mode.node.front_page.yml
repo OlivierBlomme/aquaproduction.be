@@ -1,0 +1,11 @@
+uuid: cd8be465-1450-4de2-b3d0-0c7e7c685a5d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.front_page
+label: 'Front page'
+description: ''
+targetEntityType: node
+cache: true

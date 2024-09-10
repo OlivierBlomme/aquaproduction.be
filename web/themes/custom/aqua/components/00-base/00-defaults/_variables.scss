@@ -1,5 +1,5 @@
-$font-family: 'Mukta', sans-serif;
-$heading-font-family: 'Lexend Deca', sans-serif;
+$font-family: "Jost", sans-serif;
+$heading-font-family: $font-family;
 
 $h1-font-family: $heading-font-family;
 $h2-font-family: $heading-font-family;
@@ -7,13 +7,13 @@ $h3-font-family: $font-family;
 $h4-font-family: $font-family;
 $h5-font-family: $font-family;
 
-$h1-font-size: 2.5rem;
-$h2-font-size: 2.25rem;
-$h3-font-size: 1.75rem;
-$h4-font-size: 1.25rem;
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.5rem;
 $h5-font-size: 1rem;
 
-$heading-font-weight: 500;
+$heading-font-weight: bold;
 $h1-font-weight: $heading-font-weight;
 $h2-font-weight: $heading-font-weight;
 $h3-font-weight: $heading-font-weight;
@@ -22,16 +22,24 @@ $h5-font-weight: $heading-font-weight;
 
 $line-height: 1.65rem;
 
+//$border-width:2px;
+
 $sidebar-width: 18%;
 //$font-heading: $font-body;
 
 //$font-weight-heading: 600;
 
 //$box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-$border-radius: $space-double;
+$border-radius: 20px;
 
 $main-menu-font-family: $heading-font-family;
-//$main-menu-font-size: 1rem;
+$main-menu-font-size: $font-size-lg;
 $main-menu-font-weight: 500;
-$main-menu-text-transform: uppercase;
+$main-menu-text-transform: none;
 $main-menu-letter-spacing: 1px;
+
+
+$button-padding: 0.75rem 3.5rem;
+
+
+

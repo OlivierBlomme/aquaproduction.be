@@ -3,49 +3,138 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.image
     - node.type.article
+    - node.type.faq
     - node.type.page
+    - node.type.slider_item
+    - taxonomy.vocabulary.plantgroups
   module:
     - block
+    - block_content
     - commerce
     - commerce_order
     - commerce_product
+    - commerce_promotion
+    - commerce_store
+    - content_translation
     - contextual
+    - file
+    - filter
+    - help
+    - media
     - node
     - profile
     - system
+    - taxonomy
     - toolbar
+    - verdesoft_pricing
 _core:
-  default_config_hash: l9aZslQKb-RxaZHFxszkdJQNsEGunPDDcTlIsYmXZ3w
+  default_config_hash: eOxVPG4LPfFFjKCQ7FixpNZxzJakxZS5A0z6XW_ELd0
 id: editor
 label: Editor
 weight: 3
 is_admin: null
 permissions:
+  - 'access administration pages'
+  - 'access block library'
   - 'access commerce administration pages'
   - 'access commerce_order overview'
   - 'access commerce_product overview'
+  - 'access commerce_promotion overview'
   - 'access content overview'
   - 'access contextual links'
+  - 'access help pages'
+  - 'access taxonomy overview'
   - 'access toolbar'
-  - 'administer account settings'
+  - 'access user profiles'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer blocks'
+  - 'administer client type entities'
+  - 'administer commerce_product'
   - 'administer nodes'
   - 'administer users'
+  - 'bulk generate commerce_promotion_coupon'
+  - 'cancel account'
+  - 'change own username'
   - 'create article content'
+  - 'create commerce_promotion'
+  - 'create content translations'
+  - 'create default commerce_order'
+  - 'create default commerce_product'
+  - 'create faq content'
+  - 'create image media'
+  - 'create media'
   - 'create page content'
+  - 'create slider_item content'
   - 'delete any article content'
+  - 'delete any commerce_promotion'
   - 'delete any customer profile'
   - 'delete any default commerce_product'
+  - 'delete any faq content'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete any slider_item content'
+  - 'delete article revisions'
+  - 'delete default commerce_order'
+  - 'delete media'
   - 'delete own article content'
+  - 'delete own commerce_promotion'
+  - 'delete own default commerce_product'
+  - 'delete own faq content'
+  - 'delete own files'
+  - 'delete own image media'
   - 'delete own page content'
+  - 'delete own slider_item content'
+  - 'duplicate any commerce_promotion'
+  - 'duplicate own commerce_promotion'
   - 'edit any article content'
+  - 'edit any faq content'
+  - 'edit any image media'
   - 'edit any page content'
+  - 'edit any slider_item content'
   - 'edit own article content'
+  - 'edit own faq content'
+  - 'edit own image media'
   - 'edit own page content'
+  - 'edit own slider_item content'
+  - 'edit terms in plantgroups'
   - 'manage default commerce_order_item'
+  - 'revert article revisions'
+  - 'select account cancellation method'
+  - 'translate article node'
+  - 'translate faq node'
+  - 'translate page node'
+  - 'translate slider_item node'
+  - 'update any commerce_promotion'
   - 'update any customer profile'
   - 'update any default commerce_product'
+  - 'update any media'
+  - 'update content translations'
   - 'update default commerce_order'
+  - 'update media'
+  - 'update own commerce_promotion'
+  - 'update own default commerce_product'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view any customer profile'
+  - 'view any profile'
+  - 'view article revisions'
+  - 'view commerce_order'
+  - 'view commerce_promotion'
+  - 'view commerce_store'
   - 'view default commerce_order'
+  - 'view default commerce_product'
+  - 'view online commerce_store'
+  - 'view own customer profile'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view published client type entities'
+  - 'view published volume discount entities'
   - 'view the administration theme'

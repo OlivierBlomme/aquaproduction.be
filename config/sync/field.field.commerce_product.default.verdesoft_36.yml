@@ -1,0 +1,29 @@
+uuid: 41e10781-c60e-4b38-8dfc-baf96b1aca36
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.verdesoft_36
+    - taxonomy.vocabulary.verdesoft_36
+id: commerce_product.default.verdesoft_36
+field_name: verdesoft_36
+entity_type: commerce_product
+bundle: default
+label: Profondeur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      verdesoft_36: verdesoft_36
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

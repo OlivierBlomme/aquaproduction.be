@@ -1,8 +1,0 @@
-status: true
-dependencies:
-  module:
-    - media
-id: media.card_alt
-label: 'Card Alt'
-targetEntityType: media
-cache: true

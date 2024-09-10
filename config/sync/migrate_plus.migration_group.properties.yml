@@ -2,8 +2,6 @@ uuid: 4b96e86d-6e69-4767-8277-c22a034fa664
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: dHbi4tQn0hA4CJs429h_TFB61H1uyNPLM234az3Fofc
 id: properties
 label: 'Product properties'
 description: 'All product vocabularies and properties (terms)'

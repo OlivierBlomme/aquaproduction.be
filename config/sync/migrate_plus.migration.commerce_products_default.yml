@@ -2,8 +2,6 @@ uuid: 67c4b825-ee59-4370-bf2d-a41f89dc3643
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: SQ4jxOBY7zlZR_c6ne3LYvHNCczYpEPDLJpClZVpf2k
 id: commerce_products_default
 class: null
 field_plugin_method: null
@@ -19,9 +17,6 @@ process:
   type:
     plugin: default_value
     default_value: default
-  langcode:
-    plugin: default_value
-    default_value: nl
   uid:
     plugin: default_value
     default_value: 1
@@ -43,24 +38,22 @@ process:
   field_name:
     -
       plugin: skip_on_empty
-      source: name_nl
+      source: name
       method: process
     -
       plugin: get
-      source: name_nl
-      language: nl
+      source: name
   body/value:
     -
       plugin: skip_on_empty
-      source: description_nl
+      source: description
       method: process
     -
       plugin: callback
       callable: nl2br
-      source: description_nl
+      source: description
     -
       plugin: get
-      language: nl
   body/format:
     plugin: default_value
     default_value: full_html
@@ -82,6 +75,7 @@ process:
             no_stub: true
         alt: alt
         title: alt
+        delta: delta
   field_category/target_id:
     plugin: migration_lookup
     migration:

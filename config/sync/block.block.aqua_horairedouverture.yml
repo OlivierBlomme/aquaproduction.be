@@ -1,6 +1,6 @@
 uuid: a541be80-e262-4eb8-be49-2002aa1ad2aa
 langcode: fr
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:1ab76a2c-12a0-4c41-ad55-f9c68f111546'
@@ -12,7 +12,7 @@ dependencies:
 id: aqua_horairedouverture
 theme: aqua
 region: sidebar
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:1ab76a2c-12a0-4c41-ad55-f9c68f111546'
 settings:
