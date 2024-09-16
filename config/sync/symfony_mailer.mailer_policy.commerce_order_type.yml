@@ -1,0 +1,21 @@
+uuid: edfccf7c-2f59-4a0d-ab55-997891fa779d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order_type
+configuration:
+  email_body:
+    content:
+      value: |-
+        <h1><a href="{{ url('<front>') }}">{{ store }}</a></h1>
+        <table class="commerce-order-body"><tr><td>
+        <h2>Order Confirmation</h2>
+        <p class="commerce-order-number">Order #{{ order_number }} details</p>
+        {{ body }}
+        <p>Thank you for your order!</p>
+        </td></tr></table>
+      format: email_html
+  email_subject:
+    value: 'Order #{{ order_number }} confirmed'

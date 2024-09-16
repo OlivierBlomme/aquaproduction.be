@@ -1,0 +1,15 @@
+uuid: e100de84-f803-4453-90f7-502cd621fc18
+langcode: fr
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_form
+configuration:
+  email_to:
+    addresses:
+      -
+        value: '<site>'
+        display: 'Aqua Production'
+  email_subject:
+    value: '[{{ form }}] {{ subject }}'

@@ -1,0 +1,15 @@
+uuid: de30af16-2146-4a14-a4f0-45bb671a31fb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_form.mail
+configuration:
+  email_body:
+    content:
+      value: |-
+        <p class="contact-email-intro"><a href="{{ sender_url }}">{{ sender_name }}</a> a envoyé un message en utilisant le formulaire de contact <a href="{{ form_url }}">{{ form }}</a>.</p>
+        <hr>
+        {{ body }}
+      format: email_html

@@ -75,7 +75,6 @@ process:
             no_stub: true
         alt: alt
         title: alt
-        delta: delta
   field_category/target_id:
     plugin: migration_lookup
     migration:

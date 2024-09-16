@@ -1,0 +1,14 @@
+uuid: 1931123f-6689-4a8e-a083-cebf9d7d8c4e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.register_no_approval_required
+configuration:
+  email_subject:
+    value: 'Accountgegevens voor [user:field_company_name] op [site:name]'
+  email_body:
+    content:
+      value: "Dag [user:field_first_name],\r\n\r\nBedankt voor uw registratie op [site:url-brief]. U kan inloggen op [site:login-url] met:\r\n\r\nGebruikersnaam: [user:mail]\r\nWachtwoord: Uw wachtwoord\r\n\r\nMet vriendelijke groet,\r\nTeam [site:name]"
+      format: plain_text

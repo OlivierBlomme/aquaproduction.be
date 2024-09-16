@@ -2,8 +2,8 @@ uuid: c6da1670-20ea-488a-8686-3091b40c796d
 langcode: nl
 status: true
 dependencies: {  }
-name: 'Groupes de plantes'
+name: Plantengroepen
 vid: plantgroups
-description: null
+description: Plantengroepen
 weight: 0
 new_revision: false

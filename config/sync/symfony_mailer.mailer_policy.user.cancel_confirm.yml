@@ -1,0 +1,14 @@
+uuid: 57e89f59-0751-4e51-a264-1273d6feced0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.cancel_confirm
+configuration:
+  email_subject:
+    value: "Demande d'annulation de compte de [user:field_company_name] sur [site:name]"
+  email_body:
+    content:
+      value: "[user:field_company_name],\r\n\r\nUne demande d'annulation de votre compte utilisateur a été soumise sur [site:name].\r\n\r\nVous pouvez maintenant annuler votre compte sur [site:name] en cliquant sur le lien ci-dessous ou en le copiant et collant dans votre navigateur :\r\n\r\n[user:field_company_name]\r\n\r\nAttention : L'annulation de votre compte est irréversible !\r\n\r\nCe lien expirera dans un jour. Rien ne se passera si ce lien n'est pas utilisé dans ce délai.\r\n\r\n-- L'équipe de [site:name]"
+      format: plain_text

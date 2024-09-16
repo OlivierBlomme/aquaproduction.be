@@ -1,0 +1,17 @@
+uuid: 5ac51b95-9ea4-45a8-97cf-09e149c1c848
+langcode: fr
+status: true
+dependencies:
+  module:
+    - contact
+id: contact.mail
+configuration:
+  email_body:
+    content:
+      value: |-
+        <p class="contact-email-intro">Bonjour {{ recipient_name }},<br>
+        <a href="{{ sender_url }}">{{ sender_name }}</a> vous a envoyé un message via votre formulaire sur {{ site_name }}.
+        Si vous ne souhaitez plus recevoir de tels emails, vous pouvez <a href="{{ recipient_edit_url }}">modifier vos paramètres</a>.</p>
+        <hr>
+        {{ body }}
+      format: email_html

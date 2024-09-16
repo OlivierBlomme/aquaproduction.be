@@ -1,0 +1,19 @@
+uuid: b8d4cc01-8fd4-485e-88f9-a7c10d730ad8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.register_pending_approval_admin
+configuration:
+  email_subject:
+    value: 'Groen professioneel [user:field_company_name] wacht op goedkeuring'
+  email_body:
+    content:
+      value: "[user:field_company_name] heeft een professionele account aangevraagd.\r\n\r\n[user:edit-url]"
+      format: plain_text
+  email_to:
+    addresses:
+      -
+        value: '<site>'
+        display: ''

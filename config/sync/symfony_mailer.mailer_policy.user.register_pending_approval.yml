@@ -1,0 +1,14 @@
+uuid: 00791220-e587-40d9-8407-ebc2b1a81ef0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.register_pending_approval
+configuration:
+  email_subject:
+    value: 'Groen professioneel [user:field_company_name] wacht op goedkeuring'
+  email_body:
+    content:
+      value: "Dag [user:field_first_name],\r\n\r\nBedankt voor uw registratie op [site:url-brief]. Uw registratie wacht op goedkeuring omdat u hebt aangegeven een bedrijf te zijn, actief in de groensector. Na goedkeuring ontvangt u een e-mail met informatie hoe u kunt inloggen.\r\n\r\nMet vriendelijke groet,\r\nTeam [site:name]"
+      format: plain_text

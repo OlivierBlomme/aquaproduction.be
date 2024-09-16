@@ -1,0 +1,14 @@
+uuid: cd71156d-f5c1-4947-984b-dcd5c8fa4f9c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.status_activated
+configuration:
+  email_subject:
+    value: 'Account voor [user:field_company_name] op [site:name] is geactiveerd'
+  email_body:
+    content:
+      value: "Dag [user:field_first_name],\r\n\r\nUw account op [site:url-brief] is geactiveerd.\r\n\r\nU kan inloggen op [site:login-url] met:\r\n\r\nGebruikersnaam: [user:mail]\r\nWachtwoord: Uw wachtwoord\r\n\r\nMet vriendelijke groet,\r\nTeam [site:name]"
+      format: plain_text

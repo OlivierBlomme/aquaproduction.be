@@ -1,0 +1,26 @@
+uuid: 35c5b151-14e6-4b3b-a4ae-e9b77f793cb4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node
+label: 'Content (node)'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  0503f41d-e20f-4936-8779-f5cb75c68125:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0503f41d-e20f-4936-8779-f5cb75c68125
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      faq: faq
+      page: page
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -1,0 +1,7 @@
+default_transport: sendmail
+override:
+  user: 1
+  contact: 2
+  contact_form: 1
+  update: 1
+  commerce_order_type: 1

@@ -1,0 +1,9 @@
+uuid: 624461fe-04aa-4c03-9889-a60fc657a695
+langcode: fr
+status: true
+dependencies: {  }
+name: Indigène
+vid: verdesoft_49
+description: null
+weight: 0
+new_revision: false

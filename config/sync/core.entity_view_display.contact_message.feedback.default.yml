@@ -17,7 +17,7 @@ mode: default
 content:
   field_company:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -25,14 +25,14 @@ content:
     region: content
   field_email:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
   field_name:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -40,7 +40,7 @@ content:
     region: content
   field_phone:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }

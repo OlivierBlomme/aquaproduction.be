@@ -1,0 +1,11 @@
+uuid: ca5bc74b-5932-480a-a42c-dcda75fe5ddd
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+id: commerce_order.email
+label: Email
+description: ''
+targetEntityType: commerce_order
+cache: true

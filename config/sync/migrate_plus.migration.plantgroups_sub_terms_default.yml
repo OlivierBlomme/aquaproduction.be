@@ -35,6 +35,14 @@ process:
     -
       plugin: get
       source: name
+  volume_discount_code:
+    -
+      plugin: get
+      source: volume_discount_code
+  volume_discount_code_pro:
+    -
+      plugin: get
+      source: volume_discount_code_pro
   uid:
     -
       plugin: default_value

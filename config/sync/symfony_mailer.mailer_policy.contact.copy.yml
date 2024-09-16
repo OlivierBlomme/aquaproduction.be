@@ -1,0 +1,15 @@
+uuid: 8014f6a5-044d-4b38-b17a-a4929457ab00
+langcode: fr
+status: true
+dependencies:
+  module:
+    - contact
+id: contact.copy
+configuration:
+  email_body:
+    content:
+      value: |-
+        <p class="contact-email-intro">Voici une copie du message que vous avez envoyé à {{ recipient_name }} sur {{ site_name }}.</p>
+        <hr>
+        {{ body }}
+      format: email_html

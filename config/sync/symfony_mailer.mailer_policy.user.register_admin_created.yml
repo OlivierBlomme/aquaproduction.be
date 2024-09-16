@@ -1,0 +1,14 @@
+uuid: f49ae0fc-7253-4b07-8c27-d8afaca869e9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.register_admin_created
+configuration:
+  email_subject:
+    value: 'Er is een account voor u aangemaakt voor [site:name]'
+  email_body:
+    content:
+      value: "Dag [user:field_first_name],\r\n\r\nEen beheerder van [site:name] heeft een account voor u aangemaakt. U kunt nu inloggen door op deze link te klikken of door deze te kopieren en te plakken in uw browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nDeze link kan eenmalig gebruikt worden om in te loggen, waarna u uw wachtwoord dient aan te passen.\r\n\r\nNadat u uw wachtwoord heeft gewijzigd kunt u voortaan op [site:login-url] inloggen met behulp van de volgende gegevens:\r\n\r\ngebruikersnaam: [user:mail]\r\nwachtwoord: Uw wachtwoord\r\n\r\nMet vriendelijke groet,\r\nTeam [site:name]"
+      format: plain_text

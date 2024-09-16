@@ -1,0 +1,16 @@
+uuid: 170ad701-63c5-458b-a992-0039a3f3832a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.status_canceled
+configuration:
+  email_subject:
+    value: 'Accountgegevens voor [user:field_company_name] op [site:name] (geannuleerd)'
+  email_body:
+    content:
+      value: "[user:field_company_name],\r\n\r\nUw account op [site:name] is geannuleerd.\r\n\r\n--  Team [site:name]"
+      format: plain_text
+  email_skip_sending:
+    message: 'Notification disabled in settings'

@@ -1,0 +1,24 @@
+uuid: 9071545c-6a0f-46e5-9965-1cc9eca3612a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: plantgroups_taxonomy
+label: 'Plantgroups taxonomy'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  21c2d963-d5a4-4624-8259-a4d3e560b7fe:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 21c2d963-d5a4-4624-8259-a4d3e560b7fe
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      plantgroups: plantgroups
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Taal
