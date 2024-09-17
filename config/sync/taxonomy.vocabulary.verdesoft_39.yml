@@ -1,0 +1,9 @@
+uuid: 2b8cc2be-0fda-4b3c-a0c8-85cac7aa83d2
+langcode: fr
+status: true
+dependencies: {  }
+name: Abeilles
+vid: verdesoft_39
+description: null
+weight: 0
+new_revision: false

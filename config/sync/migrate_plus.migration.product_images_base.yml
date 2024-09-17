@@ -16,7 +16,7 @@ source:
   plugin: product_images
   track_changes: true
   constants:
-    source_folder: ../home/username
+    source_folder: /home/aquaproduction/images/products
     dest_uri: 'public://products'
 process:
   fid: {  }

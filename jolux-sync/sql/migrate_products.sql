@@ -46,6 +46,7 @@ INSERT INTO
 SELECT
     a.Code,
     a.Name,
+    a.ArtName,
     a.Memo2,
     a.Memo1,
     '',
