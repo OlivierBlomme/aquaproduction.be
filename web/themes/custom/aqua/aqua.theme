@@ -48,7 +48,7 @@ function aqua_preprocess_node(array &$variables)
 function aqua_preprocess_field(array &$variables)
 {
   // Check if we're dealing with the right field.
-  if ($variables['element']['#field_name'] == 'field_images' && \Drupal::routeMatch()->getParameter('node')->id() == 1) {
+  if (\Drupal::routeMatch()->getParameter('node')->id() == 1 && isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_images') {
     // Loop through each item in the field.
 
     foreach ($variables['items'] as &$item) {
