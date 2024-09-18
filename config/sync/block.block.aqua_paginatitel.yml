@@ -9,7 +9,7 @@ dependencies:
 id: aqua_paginatitel
 theme: aqua
 region: content
-weight: 0
+weight: -11
 provider: null
 plugin: page_title_block
 settings:

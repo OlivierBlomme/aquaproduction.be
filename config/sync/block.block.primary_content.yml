@@ -1,4 +1,4 @@
-uuid: d905243f-3dd7-420d-9dad-d8817306f354
+uuid: ad685a50-f115-48fb-8621-36469bcba091
 langcode: fr
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - system
   theme:
     - aqua
-id: aqua_primaireinhoudvandepagina
+id: primary_content
 theme: aqua
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Primaire inhoud van de pagina'
+  label: 'Contenu de la page principale'
   label_display: '0'
   provider: system
 visibility: {  }
