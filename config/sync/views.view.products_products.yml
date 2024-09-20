@@ -291,7 +291,7 @@ display:
     position: 4
     display_options:
       enabled: true
-      title: Zoekresultaten
+      title: 'Résultats de recherche'
       fields:
         field_images:
           id: field_images
@@ -605,7 +605,10 @@ display:
               administrator: '0'
               editor: '0'
               verdesoft: '0'
-            placeholder: 'Zoek planten'
+            expose_fields: false
+            placeholder: 'Rechercher des plantes'
+            searched_fields_id: ''
+            value_maxlength: 128
           is_grouped: false
           group_info:
             label: ''

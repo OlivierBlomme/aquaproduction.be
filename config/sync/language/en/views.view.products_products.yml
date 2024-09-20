@@ -1,33 +1,11 @@
-label: 'Products - Products'
 display:
   default:
-    display_title: Master
     display_options:
-      exposed_form:
-        options:
-          submit_button: Zoeken
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
-          tags:
-            previous: ‹‹
-            next: ››
       filters:
         search_api_language:
           expose:
             label: 'Item language'
-      sorts:
-        title:
-          expose:
-            label: Titel
-      title: 'Products - Products'
+            description: ''
   page_1:
     display_title: Page
     display_options:
@@ -35,48 +13,17 @@ display:
         field_category:
           exception:
             title: All
-          title: '{{ arguments.field_category }} '
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« Eerste'
-            last: 'Laatste »'
-          expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
   page_2:
-    display_title: Zoekresultaten
     display_options:
-      fields:
-        field_images:
-          separator: ', '
-        title:
-          label: 'Latijnse naam'
-          separator: ', '
-        variations:
-          separator: ', '
       filters:
         search_api_language:
           expose:
             label: 'Item language'
+            description: ''
         search_api_fulltext:
           expose:
-            placeholder: 'Zoek planten'
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« Eerste'
-            last: 'Laatste »'
-          expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
-      title: Zoekresultaten
+            placeholder: 'Search plants'
+      title: 'Search results'
       header:
         result:
           content: '@start - @end van @total'

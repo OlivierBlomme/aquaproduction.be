@@ -1,38 +1,17 @@
 display:
-  default:
-    display_title: Master
-    display_options:
-      exposed_form:
-        options:
-          reset_button_label: Reset
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
-  page_1:
-    display_title: Pagina
-    display_options:
-      arguments:
-        field_category:
-          exception:
-            title: Alle
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
   page_2:
     display_options:
-      fields:
-        field_images:
-          separator: ', '
-        title:
-          separator: ', '
-        variations:
-          separator: ', '
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
+      title: Zoekresultaten
+      filters:
+        search_api_language:
+          expose:
+            description: ''
+        search_api_fulltext:
+          expose:
+            placeholder: 'Zoek planten'
+  default:
+    display_options:
+      filters:
+        search_api_language:
+          expose:
+            description: ''
