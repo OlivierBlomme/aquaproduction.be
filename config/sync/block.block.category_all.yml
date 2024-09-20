@@ -1,0 +1,29 @@
+uuid: be492bb5-0443-4b3c-8118-2323edc08cbc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.category
+  module:
+    - facets
+    - system
+  theme:
+    - aqua
+id: category_all
+theme: aqua
+region: sidebar
+weight: -13
+provider: null
+plugin: 'facet_block:category'
+settings:
+  id: 'facet_block:category'
+  label: Categorie
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: category_all
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/all

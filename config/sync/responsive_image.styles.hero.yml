@@ -1,0 +1,56 @@
+uuid: 672015d3-4028-475e-b34e-42bd9ec2da74
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.hero_large
+    - image.style.hero_medium
+    - image.style.hero_small
+    - image.style.hero_xl
+  theme:
+    - verdesoft_emulsify
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_xl
+    breakpoint_id: images.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_xl
+    breakpoint_id: images.xl
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_large
+    breakpoint_id: images.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_large
+    breakpoint_id: images.lg
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_medium
+    breakpoint_id: images.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_medium
+    breakpoint_id: images.md
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_medium
+    breakpoint_id: images.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_medium
+    breakpoint_id: images.sm
+    multiplier: 2x
+breakpoint_group: verdesoft_emulsify
+fallback_image_style: hero_small

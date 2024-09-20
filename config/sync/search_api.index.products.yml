@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.storage.commerce_product.field_category
     - field.storage.commerce_product.verdesoft_32
+    - field.storage.commerce_product.verdesoft_29
+    - field.storage.commerce_product.verdesoft_49
     - field.storage.commerce_product.field_name
+    - field.storage.commerce_product.verdesoft_36
     - field.storage.commerce_product_variation.offer
     - search_api.server.default_server
   module:
@@ -52,6 +55,14 @@ field_settings:
     dependencies:
       module:
         - commerce_product
+  verdesoft_29:
+    label: Hauteur
+    datasource_id: 'entity:commerce_product'
+    property_path: verdesoft_29
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.verdesoft_29
   verdesoft_32:
     label: Floraison
     datasource_id: 'entity:commerce_product'
@@ -60,6 +71,22 @@ field_settings:
     dependencies:
       config:
         - field.storage.commerce_product.verdesoft_32
+  verdesoft_36:
+    label: Profondeur
+    datasource_id: 'entity:commerce_product'
+    property_path: verdesoft_36
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.verdesoft_36
+  verdesoft_49:
+    label: Indigène
+    datasource_id: 'entity:commerce_product'
+    property_path: verdesoft_49
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.verdesoft_49
 datasource_settings:
   'entity:commerce_product':
     bundles:

@@ -1,0 +1,29 @@
+uuid: 10e50fb1-dae4-4a93-a7a7-c7aa557bcde2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.verdesoft_36_all
+  module:
+    - facets
+    - system
+  theme:
+    - aqua
+id: verdesoft_36_all
+theme: aqua
+region: sidebar
+weight: -10
+provider: null
+plugin: 'facet_block:verdesoft_36_all'
+settings:
+  id: 'facet_block:verdesoft_36_all'
+  label: Profondeur
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: verdesoft_36_all
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/all

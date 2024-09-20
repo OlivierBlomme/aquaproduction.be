@@ -10,7 +10,7 @@ dependencies:
 id: google_map_block
 theme: aqua
 region: sidebar
-weight: -9
+weight: -8
 provider: null
 plugin: google_map_block
 settings:

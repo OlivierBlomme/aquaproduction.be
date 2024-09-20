@@ -18,9 +18,7 @@ dependencies:
     - field.field.commerce_product_variation.default.volume_discount_code
     - field.field.commerce_product_variation.default.volume_discount_code_pro
   module:
-    - commerce_order
     - commerce_variation_cart_form
-    - verdesoft_pricing
 third_party_settings:
   commerce_variation_cart_form:
     combine: false
@@ -39,21 +37,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  commerce_variation_cart_form:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  price:
-    type: commerce_price_calculated
-    label: hidden
-    settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
-      adjustment_types: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
   stock:
     type: number_integer
     label: inline
@@ -71,22 +54,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  volume_discount_prices:
-    type: product_variation_calculated_prices
-    label: hidden
-    settings:
-      adjustment_types: {  }
-      strip_trailing_zeroes: false
-      currency_display: symbol
-    third_party_settings: {  }
-    weight: 4
-    region: content
-    default_formatter: product_variation_calculated_prices
 hidden:
+  commerce_variation_cart_form: true
   field_category: true
   langcode: true
   list_price: true
   offer: true
+  price: true
   price2: true
   price3: true
   price4: true
@@ -99,3 +73,4 @@ hidden:
   sku: true
   volume_discount_code: true
   volume_discount_code_pro: true
+  volume_discount_prices: true

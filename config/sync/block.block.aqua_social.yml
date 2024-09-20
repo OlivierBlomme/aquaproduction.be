@@ -1,6 +1,6 @@
 uuid: 8ab6afc1-bc91-41f2-9e56-93633186eb23
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - system.menu.social

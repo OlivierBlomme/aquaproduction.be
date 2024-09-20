@@ -1,0 +1,29 @@
+uuid: 2390bf78-37c4-41de-95fe-f0574183afcd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.verdesoft_49
+  module:
+    - facets
+    - system
+  theme:
+    - aqua
+id: verdesoft_49_all
+theme: aqua
+region: sidebar
+weight: -9
+provider: null
+plugin: 'facet_block:verdesoft_49'
+settings:
+  id: 'facet_block:verdesoft_49'
+  label: Indigène
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: verdesoft_49_all
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/all

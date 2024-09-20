@@ -1,6 +1,6 @@
 uuid: a84a43fe-7f70-4f1d-94ba-83fa2c45e2c4
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - verdesoft

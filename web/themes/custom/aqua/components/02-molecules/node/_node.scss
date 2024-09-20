@@ -25,7 +25,13 @@
 
 .node__title--front-page {
 
-  @include heading-xl($margin: 0);
+  @include heading-xl($margin: 0, $font-size: $h1-font-size-mobile);
+
+  @include medium {
+    font-size: $h1-font-size;
+  }
+
+  ;
 }
 
 

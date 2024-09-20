@@ -1,0 +1,14 @@
+uuid: e0c73923-34a6-4478-b131-b2a06fd4a4ec
+langcode: nl
+status: true
+dependencies: {  }
+name: hero_xl
+label: 'Hero XL'
+effects:
+  576caed6-2c43-415f-89cc-93e556616c26:
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 500
+      anchor: center-center

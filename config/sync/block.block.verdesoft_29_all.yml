@@ -1,0 +1,29 @@
+uuid: c73b45ff-5168-4dc8-a5ea-c59925318db8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.verdesoft_29_all
+  module:
+    - facets
+    - system
+  theme:
+    - aqua
+id: verdesoft_29_all
+theme: aqua
+region: sidebar
+weight: -11
+provider: null
+plugin: 'facet_block:verdesoft_29_all'
+settings:
+  id: 'facet_block:verdesoft_29_all'
+  label: Hauteur
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: verdesoft_29_all
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products/all

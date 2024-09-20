@@ -20,7 +20,7 @@
 a.card__content {
 
   &--product {
-    padding: $space $space-double $space-double $space-double;
+  //  padding: $space $space-double $space-double $space-double;
   }
   &--article {
     padding: 0 $border-radius; //to match image border-radius
@@ -32,15 +32,23 @@ a.card .card__content--category {
   left: $space;
   bottom: -$space;
   transform: none;
-  width: calc(100% - 2rem);
-  padding: $space $space 0 $space;
-  background: clr(bg);
-  border-radius: $border-radius $border-radius 0 0;
+  //width: calc(100% - 2rem);
+ // padding: $space $space 0 $space;
+ 
+
+
+  @include medium{   padding: $space $space 0 $space;
+    width: calc(100% - 2rem);
+    background: clr(bg);
+      border-radius: $border-radius $border-radius 0 0;
+  }
 }
 
 .card__title {
   &--category {
     @include heading-small($color: clr(heading-text));
+
+
   }
 }
 

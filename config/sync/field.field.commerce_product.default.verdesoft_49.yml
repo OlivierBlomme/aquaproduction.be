@@ -1,0 +1,29 @@
+uuid: fc275914-26d7-4f16-be62-81db030dd75a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.verdesoft_49
+    - taxonomy.vocabulary.verdesoft_49
+id: commerce_product.default.verdesoft_49
+field_name: verdesoft_49
+entity_type: commerce_product
+bundle: default
+label: Indigène
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      verdesoft_49: verdesoft_49
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
