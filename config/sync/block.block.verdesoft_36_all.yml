@@ -12,7 +12,7 @@ dependencies:
 id: verdesoft_36_all
 theme: aqua
 region: sidebar
-weight: -10
+weight: -12
 provider: null
 plugin: 'facet_block:verdesoft_36_all'
 settings:

@@ -30,8 +30,6 @@
   @include medium {
     font-size: $h1-font-size;
   }
-
-  ;
 }
 
 
@@ -39,6 +37,7 @@
 .node__body {
   .node--1 & {
     order: 1;
+    padding: $space-double;
 
     @include large {
       order: 2;

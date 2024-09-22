@@ -1,0 +1,18 @@
+uuid: 8c514f53-840f-45df-99aa-4ed860896195
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.verdesoft_49
+id: taxonomy_term.verdesoft_49.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: verdesoft_49
+label: Gewijzigd
+description: 'Het tijdstip waarop de term het laatst is aangepast.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

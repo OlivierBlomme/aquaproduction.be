@@ -5,10 +5,11 @@ dependencies: {  }
 name: hero_medium
 label: 'Hero Medium'
 effects:
-  54548e46-d920-4b39-9273-86d93245baaa:
+  f36382a7-d5ce-44fe-be63-85015c4f21d2:
+    uuid: f36382a7-d5ce-44fe-be63-85015c4f21d2
     id: image_scale_and_crop
     weight: 1
     data:
       width: 992
-      height: 400
+      height: 645
       anchor: center-center

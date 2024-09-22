@@ -5,7 +5,8 @@ dependencies: {  }
 name: hero_large
 label: 'Hero Large'
 effects:
-  cf255c71-b66c-4de1-8470-ed1daa4a6828:
+  e828fd89-b08a-4b3b-822f-357b69750c2f:
+    uuid: e828fd89-b08a-4b3b-822f-357b69750c2f
     id: image_scale_and_crop
     weight: 1
     data:

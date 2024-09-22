@@ -1,18 +1,18 @@
-uuid: e81164aa-e462-49d8-81ab-86300ded970a
-langcode: fr
+uuid: 7125a3e5-2b53-4bec-aed9-2e1f59719dbc
+langcode: nl
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.verdesoft_31
+    - taxonomy.vocabulary.verdesoft_49
   module:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: taxonomy_term.verdesoft_31
+id: taxonomy_term.verdesoft_49
 target_entity_type_id: taxonomy_term
-target_bundle: verdesoft_31
+target_bundle: verdesoft_49
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

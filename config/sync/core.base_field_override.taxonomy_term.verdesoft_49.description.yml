@@ -1,0 +1,21 @@
+uuid: 6ec11e19-83c2-499a-85f9-b2880499d69d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.verdesoft_49
+  module:
+    - text
+id: taxonomy_term.verdesoft_49.description
+field_name: description
+entity_type: taxonomy_term
+bundle: verdesoft_49
+label: Beschrijving
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

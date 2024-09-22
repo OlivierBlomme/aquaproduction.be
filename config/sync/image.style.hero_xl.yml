@@ -5,9 +5,10 @@ dependencies: {  }
 name: hero_xl
 label: 'Hero XL'
 effects:
-  576caed6-2c43-415f-89cc-93e556616c26:
+  068fb7ba-d9f7-4e86-b58c-7d15a3102e53:
+    uuid: 068fb7ba-d9f7-4e86-b58c-7d15a3102e53
     id: image_scale_and_crop
-    weight: 2
+    weight: 1
     data:
       width: 1920
       height: 500

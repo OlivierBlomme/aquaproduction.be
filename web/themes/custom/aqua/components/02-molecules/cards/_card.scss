@@ -5,50 +5,31 @@
     border-radius: $border-radius;
     overflow: hidden;
   }
-
-  &--category {
-
-    @include medium {
-      margin-bottom: $space-double;
-      &:last-child{   margin-bottom: $space-double;}
-    }
-
-  }
 }
 
 .card__content,
 a.card__content {
 
-  &--product {
-  //  padding: $space $space-double $space-double $space-double;
-  }
   &--article {
     padding: 0 $border-radius; //to match image border-radius
   }
 }
 
 a.card .card__content--category {
-  top: auto;
-  left: $space;
-  bottom: -$space;
+  position: relative;
+  top: initial;
+  left: initial;
   transform: none;
-  //width: calc(100% - 2rem);
- // padding: $space $space 0 $space;
- 
+  padding: 0;
 
+  @include medium {
 
-  @include medium{   padding: $space $space 0 $space;
+    left: $space;
+    padding: $space $space 0 $space;
     width: calc(100% - 2rem);
     background: clr(bg);
-      border-radius: $border-radius $border-radius 0 0;
-  }
-}
-
-.card__title {
-  &--category {
-    @include heading-small($color: clr(heading-text));
-
-
+    border-radius: $border-radius $border-radius 0 0;
+    transform: translate(0, -50%);
   }
 }
 

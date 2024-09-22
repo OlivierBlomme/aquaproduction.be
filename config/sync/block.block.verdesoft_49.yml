@@ -1,4 +1,4 @@
-uuid: 2390bf78-37c4-41de-95fe-f0574183afcd
+uuid: 56d6c128-c8e8-45a6-9440-7c631ed74dc3
 langcode: fr
 status: true
 dependencies:
@@ -9,10 +9,10 @@ dependencies:
     - system
   theme:
     - aqua
-id: verdesoft_49_all
+id: verdesoft_49
 theme: aqua
 region: sidebar
-weight: -11
+weight: -6
 provider: null
 plugin: 'facet_block:verdesoft_49'
 settings:
@@ -21,9 +21,9 @@ settings:
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: verdesoft_49_all
+  block_id: verdesoft_49
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /products/all
+    pages: '/taxonomy/term/*'

@@ -17,4 +17,4 @@ description: "Utilisez des <em>articles</em> pour du contenu d'actualité tel qu
 help: null
 new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

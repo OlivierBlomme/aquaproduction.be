@@ -1,17 +1,17 @@
-uuid: 796febc9-8a39-44fd-917d-d8596b7d1eca
-langcode: fr
+uuid: 0c5d4a4d-c884-4a7c-8672-c34ebf041c49
+langcode: nl
 status: true
 dependencies:
   config:
-    - block_content.type.basic
-id: block_content.basic.status
+    - taxonomy.vocabulary.verdesoft_49
+id: taxonomy_term.verdesoft_49.status
 field_name: status
-entity_type: block_content
-bundle: basic
+entity_type: taxonomy_term
+bundle: verdesoft_49
 label: Gepubliceerd
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 1

@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - filter.format.basic_html
     - filter.format.full_html
     - filter.format.restricted_html
@@ -35,7 +36,7 @@ dependencies:
 _core:
   default_config_hash: eOxVPG4LPfFFjKCQ7FixpNZxzJakxZS5A0z6XW_ELd0
 id: editor
-label: Editor
+label: Redacteur
 weight: 3
 is_admin: null
 permissions:
@@ -94,6 +95,7 @@ permissions:
   - 'duplicate any commerce_promotion'
   - 'duplicate own commerce_promotion'
   - 'edit any article content'
+  - 'edit any basic block content'
   - 'edit any faq content'
   - 'edit any image media'
   - 'edit any page content'
@@ -108,6 +110,7 @@ permissions:
   - 'revert article revisions'
   - 'select account cancellation method'
   - 'translate article node'
+  - 'translate block_content'
   - 'translate faq node'
   - 'translate page node'
   - 'translate slider_item node'

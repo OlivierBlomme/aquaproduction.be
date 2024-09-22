@@ -1,29 +1,29 @@
-uuid: 2390bf78-37c4-41de-95fe-f0574183afcd
+uuid: 547a713a-2cc5-4d6c-94b9-2c05f41d2423
 langcode: fr
 status: true
 dependencies:
   config:
-    - facets.facet.verdesoft_49
+    - facets.facet.verdesoft_29
   module:
     - facets
     - system
   theme:
     - aqua
-id: verdesoft_49_all
+id: verdesoft_29
 theme: aqua
 region: sidebar
-weight: -11
+weight: -8
 provider: null
-plugin: 'facet_block:verdesoft_49'
+plugin: 'facet_block:verdesoft_29'
 settings:
-  id: 'facet_block:verdesoft_49'
-  label: Indigène
+  id: 'facet_block:verdesoft_29'
+  label: Hauteur
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: verdesoft_49_all
+  block_id: verdesoft_29
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /products/all
+    pages: '/taxonomy/term/*'

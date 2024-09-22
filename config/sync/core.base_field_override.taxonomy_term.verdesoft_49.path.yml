@@ -1,0 +1,20 @@
+uuid: bfa5921a-71d7-4f5e-bdf2-247a719411d2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.verdesoft_49
+  module:
+    - path
+id: taxonomy_term.verdesoft_49.path
+field_name: path
+entity_type: taxonomy_term
+bundle: verdesoft_49
+label: URL-alias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

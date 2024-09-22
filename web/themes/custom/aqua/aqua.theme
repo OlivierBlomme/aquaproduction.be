@@ -25,9 +25,9 @@ function aqua_preprocess_block(array &$variables)
   if (\Drupal::service('path.matcher')->isFrontPage()) {
 
     if ($variables['elements']['#id'] == 'aqua_views_block__products_taxonomy_block_1') {
-      $variables['pre_title'] = t('Assortiment');
+      $variables['pre_title'] = t('Assortiment', [], ['context' => 'pre_title']);
     } elseif ($variables['elements']['#id'] == 'aqua_views_block__content_recent_block_1') {
-      $variables['pre_title'] = t('Nouvelles');
+      $variables['pre_title'] = t('Nouvelles', [], ['context' => 'pre_title']);
     }
   }
 }
@@ -40,7 +40,7 @@ function aqua_preprocess_node(array &$variables)
   if (\Drupal::service('path.matcher')->isFrontPage()) {
 
     if ($variables['node']->bundle() == 'page') {
-      $variables['pre_title'] = t('A propos');
+      $variables['pre_title'] = t('A propos', [], ['context' => 'pre_title']);
     }
   }
 }

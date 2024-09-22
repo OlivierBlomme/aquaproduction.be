@@ -1,0 +1,18 @@
+uuid: 0477ef2c-3cb5-4067-9344-0d301b7d2781
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.verdesoft_49
+id: taxonomy_term.verdesoft_49.name
+field_name: name
+entity_type: taxonomy_term
+bundle: verdesoft_49
+label: Naam
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
