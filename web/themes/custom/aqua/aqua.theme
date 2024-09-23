@@ -12,7 +12,7 @@ function aqua_preprocess_page_title(array &$variables)
 
   if (\Drupal::service('path.matcher')->isFrontPage()) {
     // Add the pre_title to the content array.
-    $variables['pre_title'] = t('A propos');
+    $variables['pre_title'] = t('About', [], ['context' => 'pre_title']);
   }
 }
 
@@ -25,9 +25,9 @@ function aqua_preprocess_block(array &$variables)
   if (\Drupal::service('path.matcher')->isFrontPage()) {
 
     if ($variables['elements']['#id'] == 'aqua_views_block__products_taxonomy_block_1') {
-      $variables['pre_title'] = t('Assortiment', [], ['context' => 'pre_title']);
+      $variables['pre_title'] = t('Assortment', [], ['context' => 'pre_title']);
     } elseif ($variables['elements']['#id'] == 'aqua_views_block__content_recent_block_1') {
-      $variables['pre_title'] = t('Nouvelles', [], ['context' => 'pre_title']);
+      $variables['pre_title'] = t('News', [], ['context' => 'pre_title']);
     }
   }
 }
@@ -40,24 +40,7 @@ function aqua_preprocess_node(array &$variables)
   if (\Drupal::service('path.matcher')->isFrontPage()) {
 
     if ($variables['node']->bundle() == 'page') {
-      $variables['pre_title'] = t('A propos', [], ['context' => 'pre_title']);
-    }
-  }
-}
-
-function aqua_preprocess_field(array &$variables)
-{
-  // Check if we're dealing with the right field.
-
-  $node = \Drupal::routeMatch()->getParameter('node');
-  if ($node && $node->id() == 1 && isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_images') {
-    // Loop through each item in the field.
-
-    foreach ($variables['items'] as &$item) {
-      if (isset($item['content']['#media'])) {
-        // Load the media entity.
-        $media = $item['content']['#media'];
-        // Ensure the media entity is of type 'image'.
+      $variables['pre_title'] = t('About', [], ['context' => 'pre_title']);
         if ($media->bundle() == 'image') {
 
 
