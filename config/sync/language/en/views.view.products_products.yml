@@ -13,6 +13,14 @@ display:
         field_category:
           exception:
             title: All
+      pager:
+        options:
+          tags:
+            first: '« First'
+            last: 'Last »'
+      header:
+        result:
+          content: '<p class="view-result"><span class="view-result__start">@start</span> - <span class="view-result_end">@end</span> of <span class="view-result__total">@total</span></p>'
   page_2:
     display_options:
       filters:

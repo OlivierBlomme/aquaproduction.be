@@ -184,8 +184,8 @@ display:
           tags:
             next: ››
             previous: ‹‹
-            first: '« Eerste'
-            last: 'Laatste »'
+            first: '« Premier'
+            last: 'Dernier »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per pagina'
@@ -271,7 +271,7 @@ display:
           admin_label: ''
           plugin_id: result
           empty: false
-          content: '<p class="view-result"><span class="view-result__start">@start</span> - <span class="view-result_end">@end</span> van <span class="view-result__total">@total</span></p>'
+          content: '<p class="view-result"><span class="view-result__start">@start</span> - <span class="view-result_end">@end</span> de <span class="view-result__total">@total</span></p>'
       exposed_block: false
       display_extenders: {  }
       path: taxonomy/term/%
