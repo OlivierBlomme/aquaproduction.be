@@ -57,6 +57,7 @@ permissions:
   - 'administer blocks'
   - 'administer client type entities'
   - 'administer commerce_product'
+  - 'administer menu'
   - 'administer nodes'
   - 'administer users'
   - 'bulk generate commerce_promotion_coupon'
